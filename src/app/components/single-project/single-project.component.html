@@ -1,5 +1,30 @@
 <div class="project-card">
-  @if (project()) {
-  <h2>{{ project()?.title }}</h2>
-  }
+  <!-- <h2>{{ project().title }}</h2> -->
+
+  <article class="project">
+    <div class="project__image-wrapper" aria-hidden="true">
+      <img
+        [ngSrc]="project().imagePath"
+        alt=""
+        class="project__image"
+        width="400"
+        height="200"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+    </div>
+
+    <div class="project__info" aria-label="Information about the project">
+      <h3 class="project__title">{{ project().title }}</h3>
+      <p class="project__description">{{ project().description }}</p>
+      <div class="project__languages">
+        {{ project().techLanguages }}
+      </div>
+
+      <div class="project__buttons">
+        <button class="btn btn--github" title="View project on GitHub"></button>
+
+        <button class="btn btn--demo" title="View deployed project"></button>
+      </div>
+    </div>
+  </article>
 </div>
