@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Projects } from '../../Projects';
+import { CommonModule } from '@angular/common';
+import { ProjectService } from '../../services/project.service';
 import { IProject } from '../../models/IProject';
 import { SingleProjectComponent } from '../single-project/single-project.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
@@ -12,5 +12,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  projects: IProject[] = Projects;
+  projects: IProject[] = [];
+
+  constructor(private projectService: ProjectService) {}
+
+  ngOnInit(): void {
+    // this.projects = this.projectService.getProjects();
+    this.projectService
+      .getProjects()
+      .subscribe((projects) => (this.projects = projects));
+  }
 }
