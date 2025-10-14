@@ -2,7 +2,7 @@ import { IProject } from './models/IProject';
 
 export const Projects: IProject[] = [
   {
-    imagePath: 'assets/textile-webshop_portfolio.jpg',
+    imagePath: 'assets/images/textile-webshop_portfolio.webp',
     title: 'Textile Webshop',
     description:
       'A fictional webshop application for textiles, built with vanilla JavaScript. This project includes functionalities such as listing products, sorting and filtering, managing a shopping cart, and placing orders through a form.',
@@ -12,7 +12,7 @@ export const Projects: IProject[] = [
       'https://fridanordenlow.github.io/project-everyday-textile-webshop/',
   },
   {
-    imagePath: 'assets/jazzy-quiz_preview.webp',
+    imagePath: 'assets/images/jazzy-quiz_preview.webp',
     title: 'Jazz Up Quiz',
     description:
       'An engaging and user-friendly music quiz game emphasizing accessible design and intuitive feedback. Features randomized questions, multiple-choice answers, a scoring system with speed bonuses, and a final summary showing score and time.',
@@ -21,7 +21,7 @@ export const Projects: IProject[] = [
     deployedLink: 'https://fridanordenlow.github.io/project-jazzy-music-quiz/',
   },
   {
-    imagePath: 'assets/labyrinth-mockup.png',
+    imagePath: 'assets/images/labyrinth-mockup.png',
     title: 'Old School Labyrinth Game',
     description:
       'A little labyrinth game built in React where we worked with storing the current state of the game using thunks and async actions in Redux. We flirted with some coding visual elements in the design.',
@@ -31,7 +31,7 @@ export const Projects: IProject[] = [
     deployedLink: 'https://reliable-sorbet-d720d3.netlify.app/',
   },
   {
-    imagePath: 'assets/to-do-list.png',
+    imagePath: 'assets/images/to-do-list.png',
     title: 'To Do List Web App',
     description:
       'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
@@ -41,7 +41,7 @@ export const Projects: IProject[] = [
     deployedLink: 'https://to-do-list-by-frida.netlify.app/',
   },
   {
-    imagePath: 'assets/movie-page.png',
+    imagePath: 'assets/images/movie-page.png',
     title: 'Movie Page',
     description:
       'In this project I worked with two Technigo teammates to make a movie site that collected data from an API. We learned how to work and implement new React hooks and functions to enable us to create and navigate to multiple pages.',
@@ -65,7 +65,7 @@ export const Projects: IProject[] = [
   //   deployedLink: 'https://music-releases-by-frida-and-fiona.netlify.app'
   // },
   {
-    imagePath: 'assets/weather-app.png',
+    imagePath: 'assets/images/weather-app.png',
     title: 'Weather App',
     description:
       'This weather site shows the current weather and a five day forecast in the chosen city by pulling data from the Open Weather API. to update the current and 5-day forecast. It changes color and weather icons based on the current conditions.',
