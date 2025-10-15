@@ -9,6 +9,5 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: $spacing-md;
-  padding-right: $spacing-md;
+  padding: 0 $spacing-lg $spacing-lg $spacing-lg;
 }
