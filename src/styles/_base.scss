@@ -7,3 +7,10 @@ html {
 body {
   font-family: $primary-font;
 }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-bg-color;
+}
