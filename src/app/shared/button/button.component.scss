@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+button {
+  padding: $spacing-xs $spacing-sm;
+  font-family: $primary-font;
+  font-size: $font-size-md;
+  font-weight: $fw-semibold;
+  color: black;
+  // background-color: rgb(138, 182, 138);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn {
+  &--github {
+    background-color: #87b790;
+    color: white;
+
+    // @media (min-width: 1024px) {
+    //   width: 200px;
+    //   height: 48px;
+    // }
+  }
+
+  &--demo {
+    margin-left: $spacing-sm;
+    background-color: #0b24f5;
+    color: white;
+
+    // @media (min-width: 1024px) {
+    //   width: 164px;
+    //   height: 48px;
+    // }
+  }
+}
