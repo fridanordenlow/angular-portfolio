@@ -1,9 +1,12 @@
+@use "variables" as *;
+
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: $spacing-md;
 
   @media (min-width: 850px) {
     flex-direction: row;
@@ -71,41 +74,31 @@
   }
 }
 
-.btn {
-  border: none;
-  background-color: white;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+// .btn {
+//   border: none;
+//   background-color: white;
+//   background-size: cover;
+//   background-position: center;
+//   cursor: pointer;
 
-  &--github {
-    width: 160px;
-    height: 38px;
-    // background-image: url("/assets/icons/View-Code-Button.svg");
+//   &--github {
+//     width: 160px;
+//     height: 38px;
 
-    // &:hover {
-    //    background-image: url("/assets/icons/View-Code-Button-Hover.svg");
-    // }
+//     @media (min-width: 1024px) {
+//       width: 200px;
+//       height: 48px;
+//     }
+//   }
 
-    @media (min-width: 1024px) {
-      width: 200px;
-      height: 48px;
-    }
-  }
+//   &--demo {
+//     width: 130px;
+//     height: 38px;
+//     margin-left: 20px;
 
-  &--demo {
-    width: 130px;
-    height: 38px;
-    margin-left: 20px;
-    // background-image: url("../../assets/icons/Live-Demo-Button.svg");
-
-    // &:hover {
-    //   background-image: url("/assets/icons/Live-Demo-Button-Hover.svg");
-    // }
-
-    @media (min-width: 1024px) {
-      width: 164px;
-      height: 48px;
-    }
-  }
-}
+//     @media (min-width: 1024px) {
+//       width: 164px;
+//       height: 48px;
+//     }
+//   }
+// }

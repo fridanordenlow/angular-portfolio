@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { IProject } from '../../models/IProject';
+import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, ButtonComponent],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss',
 })

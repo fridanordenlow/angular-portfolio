@@ -21,9 +21,18 @@
       </div>
 
       <div class="project__buttons">
-        <button class="btn btn--github" title="View project on GitHub"></button>
-
-        <button class="btn btn--demo" title="View deployed project"></button>
+        <app-button
+          text="View Code"
+          [link]="project().githubLink"
+          [styleClass]="'btn btn--github'"
+        >
+        </app-button>
+        <app-button
+          text="Live Demo"
+          [link]="project().deployedLink"
+          [styleClass]="'btn btn--demo'"
+        >
+        </app-button>
       </div>
     </div>
   </article>
