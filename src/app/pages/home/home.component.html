@@ -1,1 +1,82 @@
-<p>home works!</p>
+<section class="home">
+  <div class="home__introduction">
+    <div class="home__profile">
+      <img
+        [ngSrc]="'assets/images/linkedin-pic-cropped.jpg'"
+        alt="Profile image of Frida"
+        width="164"
+        height="164"
+        class="home__image"
+      />
+
+      <div class="home__titles" lang="en-US">
+        <!-- <h3 class="home__name">Frida Nordenlöw</h3> -->
+        <h2 class="home__profession home__profession--primary">
+          Frontend Developer
+        </h2>
+        <h4 class="home__profession home__profession--secondary">
+          + visual & textile artist
+        </h4>
+      </div>
+    </div>
+
+    <p class="home__paragraph">
+      Hello! I'm a Frontend Developer with a background in the creative field,
+      bringing a mix of problem-solving and design skills into building
+      applications and websites. Creating has always been a big part of my
+      life—whether through hands-on crafts, design, or now, coding. My journey
+      into web development started with Technigo's bootcamp in 2023, and I'm
+      currently expanding my skills through the two-year program
+      <a
+        href="https://medieinstitutet.se/utbildningar/front-end-developer/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Frontend Developer
+      </a>
+      at Medieinstitutet in Stockholm.
+    </p>
+
+    <div class="home__links">
+      <a
+        class="home__icon"
+        href="https://www.linkedin.com/in/fridanordenlow/"
+        target="_blank"
+        rel="noreferrer"
+        title="Link to Frida's LinkedIn page"
+      >
+        <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a
+        class="home__icon"
+        href="https://github.com/fridanordenlow"
+        target="_blank"
+        rel="noreferrer"
+        title="Link to Frida's GitHub page"
+      >
+        <i aria-hidden="true" class="fab fa-github"></i>
+      </a>
+
+      <a
+        class="home__icon"
+        href="mailto:frida.nordenlow@hotmail.com"
+        target="_blank"
+        rel="noreferrer"
+        title="Link to send an email to Frida"
+      >
+        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="home__textile">
+    <img
+      [ngSrc]="'assets/images/dreamer-duvet.webp'"
+      alt="Close-up image of textile duvet art piece"
+      class="home__textile-image"
+      width="400"
+      height="400"
+    />
+  </div>
+</section>

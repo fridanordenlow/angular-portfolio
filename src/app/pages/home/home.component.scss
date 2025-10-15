@@ -1,0 +1,140 @@
+@use "variables" as *;
+
+.home {
+  display: flex;
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding-top: $spacing-lg;
+
+    @media (min-width: 667px) {
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      // padding: $spacing-md $spacing-sm;
+    }
+
+    @media (min-width: 1200px) {
+      flex: 1;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    width: 10.25rem; // 164px
+    height: 10.25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: left;
+    object-position: 10% 90%;
+    margin-bottom: $gap-md;
+
+    @media (min-width: 667px) {
+      margin-right: $gap-lg;
+    }
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  //   &__name {
+  //     font-family: $primary-font;
+  //     font-size: $font-size-xxl;
+  //     font-weight: $fw-bold;
+  //     color: #86b8d7;
+  //   }
+
+  &__profession {
+    &--primary {
+      font-family: $primary-font;
+      font-size: $font-size-heading-sm;
+      font-weight: $fw-black;
+      color: #86b8d7;
+    }
+
+    &--secondary {
+      font-family: $primary-font;
+      font-size: $font-size-xl;
+      font-weight: $fw-medium;
+      color: #565656;
+    }
+  }
+
+  &__paragraph {
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
+    font-weight: $fw-regular;
+    // line-height: $line-height-xl;
+    margin-top: $gap-lg;
+    // margin-right: $gap-lg;
+
+    @media (min-width: 850px) {
+      margin-right: $gap-lg;
+    }
+
+    a {
+      color: black;
+      font-style: italic;
+      text-decoration: underline 1px;
+
+      &:hover {
+        color: #e58ca1;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    width: 150px;
+    margin-top: $spacing-lg;
+  }
+
+  &__icon {
+    color: rgb(175, 175, 175);
+    font-size: $font-size-heading-sm;
+
+    &:hover {
+      color: #e58ca1;
+    }
+  }
+
+  &__textile {
+    display: none;
+
+    @media (min-width: 850px) {
+      display: flex;
+      width: 40%;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+      flex: 1;
+    }
+  }
+
+  &__textile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
