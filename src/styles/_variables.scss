@@ -1,0 +1,36 @@
+/* Font variables */
+$primary-font: "Satoshi", sans-serif;
+$secondary-font: "EB Garamond", serif;
+
+/* Colors */
+$primary-bg-color: white;
+$secondary-bg-color: rgb(215, 225, 234);
+
+/* Spacing variables */
+/* Global page padding */
+$spacing-xs: 0.5rem; // 8px
+$spacing-sm: 1rem; // 16px
+$spacing-md: 2rem; // 32px
+$spacing-lg: 3rem; // 48px
+$spacing-xl: 4rem; // 64px
+$spacing-xxl: 6rem; // 96px
+
+/* Standard gap between elements */
+$gap-xs: 0.5rem; // 8px
+$gap-sm: 1rem; // 16px
+$gap-md: 1.5rem; // 24px
+$gap-lg: 2rem; // 32px
+$gap-xl: 3rem; // 48px
+
+/* Section spacing (margin-top / margin-bottom for consistent vertical rhythm) */
+$section-spacing-sm: 2rem;
+$section-spacing-md: 4rem;
+$section-spacing-lg: 6rem;
+
+/* Variables for buttons */
+// $button-bg: rgb(210, 225, 234);
+// $button-color: #000;
+// $button-hover-bg: #ccc;
+// $button-hover-color: #333;
+// $button-padding: 0.5rem 1rem;
+// $button-transition: 0.3s ease;
