@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectService } from '../../services/project.service';
-import { IProject } from '../../models/IProject';
+import { IProject } from '../../models/project.model';
 import { SingleProjectComponent } from '../../components/single-project/single-project.component';
 
 @Component({

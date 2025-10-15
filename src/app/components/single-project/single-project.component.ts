@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { IProject } from '../../models/IProject';
+import { IProject } from '../../models/project.model';
 import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
