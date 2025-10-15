@@ -1,12 +1,38 @@
-/* Font variables */
+/* Font families */
 $primary-font: "Satoshi", sans-serif;
 $secondary-font: "EB Garamond", serif;
+
+/* Font size */
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem; // 16px (default body)
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem; // 24px
+$font-size-xxl: 1.75rem;
+$font-size-heading-sm: 2rem; // 32px
+$font-size-heading-md: 2.5rem; // 40px
+$font-size-heading-lg: 3rem; // 48px
+$font-size-heading-xl: 4rem; // 64px
+$font-size-heading-xxl: 5rem; // 80px
+
+/* Font weight */
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-black: 800;
+
+/* Line heights */
+$line-height-sm: 1rem; // 16px
+$line-height-md: 1.5rem; // 24px
+$line-height-lg: 2rem; // 32px
+$line-height-xl: 2.5rem; // 40px
 
 /* Colors */
 $primary-bg-color: white;
 $secondary-bg-color: rgb(215, 225, 234);
 
-/* Spacing variables */
+/* Spacing */
 /* Global page padding */
 $spacing-xs: 0.5rem; // 8px
 $spacing-sm: 1rem; // 16px
