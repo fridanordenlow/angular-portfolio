@@ -1,20 +1,23 @@
+@use "variables" as *;
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #aac5b5;
-  padding: 3rem 3rem;
+  padding: $spacing-lg;
+  min-height: 100vh;
+  flex: 1;
 
   &__header {
     color: black;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 78px;
+    font-size: $font-size-heading-sm;
+    font-weight: $fw-black;
     margin-bottom: 65px;
 
     @media (min-width: 667px) {
-      font-size: 52px;
-      margin-bottom: 2rem;
+      font-size: $font-size-heading-lg;
+      margin-bottom: $spacing-md;
     }
   }
 
@@ -36,57 +39,72 @@
     object-position: 10% 90%;
 
     @media (min-width: 667px) {
-      margin-right: 29px;
+      margin-right: $spacing-md;
     }
   }
 
   &__titles {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     // height: 115px;
-    margin-top: 34px;
+    margin-top: $spacing-md;
 
     &-name {
-      font-size: 28px;
-      font-weight: 700;
+      font-size: $font-size-xxl;
+      font-weight: $fw-bold;
       color: black;
     }
 
     &-role--primary {
-      font-size: 32px;
-      font-weight: 900;
+      font-size: $font-size-heading-sm;
+      font-weight: $fw-black;
     }
 
     &-role--secondary {
-      font-size: 24px;
-      font-weight: 400;
+      font-size: $font-size-xl;
+      font-weight: $fw-regular;
       color: #565656;
+    }
+
+    @media (min-width: 667px) {
+      justify-content: flex-start;
+      margin-top: 0;
+
+      &-name {
+        font-size: $font-size-heading-sm;
+      }
+
+      &-role--primary {
+        font-size: $font-size-heading-md;
+      }
+
+      &-role--secondary {
+        font-size: $font-size-xl;
+      }
     }
   }
 
-  &__info {
+  &__details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: black;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 56px 0;
+    font-weight: $fw-bold;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    margin: $spacing-lg 0;
 
     span {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: $spacing-xs;
     }
 
     @media (min-width: 667px) {
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 43px;
-      margin: 80px 0;
+      font-size: $font-size-xxl;
+      // font-weight: $fw-bold;
+      line-height: $line-height-xl;
+      margin: $spacing-xxl 0;
     }
   }
 
@@ -98,7 +116,7 @@
 
     &-link {
       color: black;
-      font-size: 26px;
+      font-size: $font-size-xl;
       transition: color 0.3s ease;
 
       &:hover {
@@ -106,7 +124,7 @@
       }
 
       @media (min-width: 667px) {
-        font-size: 30px;
+        font-size: $font-size-xxl;
       }
     }
   }
