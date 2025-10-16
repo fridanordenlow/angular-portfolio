@@ -9,6 +9,7 @@ $font-size-md: 1rem; // 16px (default body)
 $font-size-lg: 1.25rem; // 20px
 $font-size-xl: 1.5rem; // 24px
 $font-size-xxl: 1.75rem;
+$font-size-heading-xs: 1.5rem; // 24px
 $font-size-heading-sm: 2rem; // 32px
 $font-size-heading-md: 2.5rem; // 40px
 $font-size-heading-lg: 3rem; // 48px
@@ -31,6 +32,15 @@ $line-height-xl: 2.5rem; // 40px
 /* Colors */
 $primary-bg-color: white;
 $secondary-bg-color: rgb(215, 225, 234);
+$pink: #e58ca1;
+$blue: #86b8d7;
+$grey: rgb(175, 175, 175);
+$dark-grey: #565656;
+
+/* Breakpoints */
+$bp-small: 667px;
+$bp-medium: 850px;
+$bp-large: 1200px;
 
 /* Spacing */
 $space-xxs: 0.25rem; // 4px
