@@ -4,12 +4,12 @@ import { IProject } from '../../models/project.model';
 import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
-  selector: 'app-single-project',
+  selector: 'app-project-card',
   standalone: true,
   imports: [NgOptimizedImage, ButtonComponent],
-  templateUrl: './single-project.component.html',
-  styleUrl: './single-project.component.scss',
+  templateUrl: './project-card.component.html',
+  styleUrl: './project-card.component.scss',
 })
-export class SingleProjectComponent {
+export class ProjectCardComponent {
   project = input.required<IProject>();
 }
