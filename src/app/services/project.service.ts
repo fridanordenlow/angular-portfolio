@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { IProject } from '../models/project.model';
-import { Projects } from '../Projects';
+import { projects } from '../data/projects.data';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +14,7 @@ export class ProjectService {
   // }
 
   getProjects(): Observable<IProject[]> {
-    const projectsObservable = of(Projects);
+    const projectsObservable = of(projects);
     return projectsObservable;
   }
 }
