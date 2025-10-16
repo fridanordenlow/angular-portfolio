@@ -19,7 +19,7 @@ button {
 
 .btn {
   &--github {
-    background-color: #87b790;
+    background-color: $grey;
     color: white;
 
     // @media (min-width: 1024px) {
@@ -29,8 +29,8 @@ button {
   }
 
   &--demo {
-    margin-left: $space-sm;
-    background-color: #0b24f5;
+    // margin-left: $space-sm;
+    background-color: $blue;
     color: white;
 
     // @media (min-width: 1024px) {

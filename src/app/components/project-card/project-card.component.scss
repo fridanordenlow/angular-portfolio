@@ -5,24 +5,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  height: 100%;
   margin-bottom: $space-lg;
 
-  @media (min-width: 850px) {
+  @media (min-width: $bp-medium) {
     flex-direction: row;
-    gap: 20px;
+    gap: $space-md;
     align-items: flex-start;
     justify-content: center;
+    max-width: 1000px;
   }
 
   &__image-wrapper {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: $space-sm;
     aspect-ratio: 4 / 3;
     overflow: hidden;
 
-    @media (min-width: 850px) {
-      width: 40%;
+    @media (min-width: $bp-medium) {
+      width: 50%;
+      margin-right: $space-sm;
     }
   }
 
@@ -34,71 +36,55 @@
     display: block;
   }
 
-  &__info {
-    @media (min-width: 850px) {
-      width: 60%;
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    @media (min-width: $bp-medium) {
+      width: 50%;
     }
   }
 
-  &__title {
-    font-family: "Satoshi";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 43px;
-    color: #000;
+  &__heading {
+    font-weight: $fw-black;
+    font-size: $font-size-heading-sm;
+    margin-bottom: $space-xs;
 
-    @media (min-width: 667px) {
-      font-size: 32px;
-    }
+    // @media (min-width: $bp-medium) {
+    //   font-size: $font-size-heading-sm;
+    // }
   }
 
   &__description {
     font-family: "EB Garamond";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    margin-bottom: 1rem;
+    font-size: $font-size-xl;
+    margin-bottom: $space-sm;
 
-    @media (min-width: 667px) {
-      font-size: 22px;
-      line-height: 28px;
+    @media (min-width: $bp-small) {
+      // font-size: $font-size-lg;
+      line-height: $line-height-lg;
+      margin-bottom: $space-md;
     }
   }
 
   &__languages {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-bottom: 1rem;
+    gap: $space-xs;
+    margin-bottom: $space-sm;
+  }
+
+  &__language {
+    font-weight: $fw-bold;
+    background-color: black;
+    color: white;
+    padding: $space-xxs;
+  }
+
+  &__buttons {
+    margin-top: auto;
+    display: flex;
+    gap: $space-xs;
   }
 }
-
-// .btn {
-//   border: none;
-//   background-color: white;
-//   background-size: cover;
-//   background-position: center;
-//   cursor: pointer;
-
-//   &--github {
-//     width: 160px;
-//     height: 38px;
-
-//     @media (min-width: 1024px) {
-//       width: 200px;
-//       height: 48px;
-//     }
-//   }
-
-//   &--demo {
-//     width: 130px;
-//     height: 38px;
-//     margin-left: 20px;
-
-//     @media (min-width: 1024px) {
-//       width: 164px;
-//       height: 48px;
-//     }
-//   }
-// }

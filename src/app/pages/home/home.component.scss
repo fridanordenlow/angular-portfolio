@@ -25,7 +25,7 @@
   &__profile {
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: center;
     width: 100%;
 
     @media (min-width: 1024px) {
@@ -65,14 +65,14 @@
       font-family: $primary-font;
       font-size: $font-size-heading-sm;
       font-weight: $fw-black;
-      color: #86b8d7;
+      color: $blue;
     }
 
     &--secondary {
       font-family: $primary-font;
       font-size: $font-size-xl;
       font-weight: $fw-medium;
-      color: #565656;
+      color: $dark-grey;
     }
   }
 
@@ -94,7 +94,7 @@
       text-decoration: underline 1px;
 
       &:hover {
-        color: #e58ca1;
+        color: $pink;
       }
     }
   }
@@ -108,11 +108,11 @@
   }
 
   &__icon {
-    color: rgb(175, 175, 175);
+    color: $grey;
     font-size: $font-size-heading-sm;
 
     &:hover {
-      color: #e58ca1;
+      color: $pink;
     }
   }
 

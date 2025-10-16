@@ -6,14 +6,14 @@
   align-items: flex-start;
   flex: 1;
 
-  &__header {
+  &__heading {
     font-size: $font-size-heading-sm;
     font-weight: $fw-black;
     margin-bottom: $space-xs;
 
     @media (min-width: 667px) {
       font-size: $font-size-heading-md;
-      margin-bottom: $space-lg;
+      margin-bottom: $space-sm;
     }
   }
 
