@@ -31,8 +31,8 @@
   }
 
   &__image {
-    width: 164px;
-    height: 164px;
+    // width: 164px;
+    // height: 164px;
     border-radius: 50%;
     object-fit: cover;
     align-self: center;
@@ -97,7 +97,7 @@
 
     span {
       display: block;
-      margin-bottom: $spacing-xs;
+      margin-bottom: $space-xs;
     }
 
     @media (min-width: 667px) {
