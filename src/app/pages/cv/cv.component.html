@@ -1,14 +1,17 @@
-<section class="education">
-  <h1>CV</h1>
-  <h2>Education</h2>
-  @for (edu of educationSignal(); track edu.id) {
-  <!-- <h2>{{ edu.program }}</h2>
-  <h3>{{ edu.school }}</h3> -->
-  <app-education-card [education]="edu"></app-education-card>
-  }
-  <h2>Jobs</h2>
-  @for (job of jobSignal(); track job.id) {
-  <app-job-card [job]="job"></app-job-card>
-
-  }
+<section class="cv__wrapper">
+  <!-- <h1>CV</h1> -->
+  <div class="cv__education">
+    <h2 class="cv__heading">Education</h2>
+    @for (edu of educationSignal(); track edu.id) {
+    <!-- <h2>{{ edu.program }}</h2>
+      <h3>{{ edu.school }}</h3> -->
+    <app-education-card [education]="edu"></app-education-card>
+    }
+  </div>
+  <div class="cv__jobs">
+    <h2 class="cv__heading">Jobs</h2>
+    @for (job of jobSignal(); track job.id) {
+    <app-job-card [job]="job"></app-job-card>
+    }
+  </div>
 </section>

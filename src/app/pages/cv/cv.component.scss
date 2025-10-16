@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+.cv__wrapper {
+  // display: flex;
+  gap: $space-md;
+
+  h1 {
+    font-weight: $fw-black;
+    color: #e58ca1;
+  }
+}
+.cv__heading {
+  font-size: $font-size-heading-sm;
+  font-weight: $fw-black;
+  padding: $space-lg 0;
+  text-decoration: underline;
+}
