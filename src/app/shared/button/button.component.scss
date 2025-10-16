@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 button {
-  padding: $spacing-xs $spacing-sm;
+  padding: $space-xs $space-sm;
   font-family: $primary-font;
   font-size: $font-size-md;
   font-weight: $fw-semibold;
@@ -29,7 +29,7 @@ button {
   }
 
   &--demo {
-    margin-left: $spacing-sm;
+    margin-left: $space-sm;
     background-color: #0b24f5;
     color: white;
 

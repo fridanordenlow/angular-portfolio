@@ -9,11 +9,11 @@
   &__header {
     font-size: $font-size-heading-sm;
     font-weight: $fw-black;
-    margin-bottom: $spacing-sm;
+    margin-bottom: $space-xs;
 
     @media (min-width: 667px) {
       font-size: $font-size-heading-md;
-      margin-bottom: $spacing-md;
+      margin-bottom: $space-lg;
     }
   }
 
@@ -21,13 +21,13 @@
     font-family: $secondary-font;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
-    margin-bottom: $spacing-md;
+    margin-bottom: $space-lg;
     max-width: 600px;
 
     @media (min-width: 667px) {
       font-size: $font-size-lg;
       line-height: $line-height-lg;
-      margin-bottom: $spacing-xl;
+      margin-bottom: $space-xxl;
     }
   }
 }

@@ -18,9 +18,9 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  gap: $gap-md;
-  padding: $spacing-xs;
-  margin-bottom: $spacing-sm;
-  border: 2px solid black;
+  gap: $space-xs;
+  padding: $space-sm;
+  margin-bottom: $space-sm;
+  border-left: 4px solid black;
   max-width: 500px;
 }

@@ -33,25 +33,14 @@ $primary-bg-color: white;
 $secondary-bg-color: rgb(215, 225, 234);
 
 /* Spacing */
-/* Global page padding */
-$spacing-xs: 0.5rem; // 8px
-$spacing-sm: 1rem; // 16px
-$spacing-md: 2rem; // 32px
-$spacing-lg: 3rem; // 48px
-$spacing-xl: 4rem; // 64px
-$spacing-xxl: 6rem; // 96px
-
-/* Standard gap between elements */
-$gap-xs: 0.5rem; // 8px
-$gap-sm: 1rem; // 16px
-$gap-md: 1.5rem; // 24px
-$gap-lg: 2rem; // 32px
-$gap-xl: 3rem; // 48px
-
-/* Section spacing (margin-top / margin-bottom for consistent vertical rhythm) */
-$section-spacing-sm: 2rem;
-$section-spacing-md: 4rem;
-$section-spacing-lg: 6rem;
+$space-xxs: 0.25rem; // 4px
+$space-xs: 0.5rem; // 8px
+$space-sm: 1rem; // 16px
+$space-md: 1.5rem; // 24px
+$space-lg: 2rem; // 32px
+$space-xl: 3rem; // 48px
+$space-xxl: 4rem; // 64px
+$space-xxxl: 6rem; // 96px
 
 /* Variables for buttons */
 // $button-bg: rgb(210, 225, 234);

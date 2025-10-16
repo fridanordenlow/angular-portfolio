@@ -8,13 +8,13 @@
     flex-direction: column;
     align-items: flex-start;
     flex: 1;
-    padding-top: $spacing-lg;
+    padding-top: $space-xl;
 
     @media (min-width: 667px) {
       align-items: center;
       justify-content: center;
       width: 60%;
-      // padding: $spacing-md $spacing-sm;
+      // padding: $space-lg $space-sm;
     }
 
     @media (min-width: 1200px) {
@@ -40,10 +40,10 @@
     object-fit: cover;
     align-self: left;
     object-position: 10% 90%;
-    margin-bottom: $gap-md;
+    margin-bottom: $space-md;
 
     @media (min-width: 667px) {
-      margin-right: $gap-lg;
+      margin-right: $space-lg;
     }
   }
 
@@ -81,11 +81,11 @@
     font-size: $font-size-lg;
     font-weight: $fw-regular;
     // line-height: $line-height-xl;
-    margin-top: $gap-lg;
-    // margin-right: $gap-lg;
+    margin-top: $space-lg;
+    // margin-right: $space-lg;
 
     @media (min-width: 850px) {
-      margin-right: $spacing-lg;
+      margin-right: $space-xl;
     }
 
     a {
@@ -104,7 +104,7 @@
     justify-content: space-between;
     align-self: start;
     width: 150px;
-    margin-top: $spacing-lg;
+    margin-top: $space-xl;
   }
 
   &__icon {
