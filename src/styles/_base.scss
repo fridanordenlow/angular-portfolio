@@ -14,3 +14,13 @@ main {
   flex-direction: column;
   background-color: $primary-bg-color;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-md;
+  padding: $spacing-xs;
+  margin-bottom: $spacing-sm;
+  border: 2px solid black;
+  max-width: 500px;
+}
