@@ -3,12 +3,14 @@ $primary-font: "Satoshi", sans-serif;
 $secondary-font: "EB Garamond", serif;
 
 /* Font size */
-$font-size-xs: 0.75rem; // 12px
-$font-size-sm: 0.875rem; // 14px
-$font-size-md: 1rem; // 16px (default body)
+$font-size-xxs: 0.75rem; // 12px
+$font-size-xxs: 0.875rem; // 14px
+$font-size-sm: 1rem; // 16px (default body)
+$font-size-md: 1.125rem; // 18px
 $font-size-lg: 1.25rem; // 20px
 $font-size-xl: 1.5rem; // 24px
-$font-size-xxl: 1.75rem;
+$font-size-xxl: 1.75rem; // 28px
+$font-size-heading-xxs: 1.25rem; // 20px
 $font-size-heading-xs: 1.5rem; // 24px
 $font-size-heading-sm: 2rem; // 32px
 $font-size-heading-md: 2.5rem; // 40px
