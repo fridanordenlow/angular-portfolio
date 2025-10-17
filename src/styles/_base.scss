@@ -21,6 +21,14 @@ main {
   gap: $space-xs;
   padding: $space-sm;
   margin-bottom: $space-sm;
-  border-left: 4px solid black;
-  max-width: 500px;
+  border-left: $space-xxs solid black;
+  max-width: 700px;
+}
+
+h3 {
+  font-size: $font-size-heading-xs;
+}
+
+h4 {
+  font-size: $font-size-heading-xxs;
 }
