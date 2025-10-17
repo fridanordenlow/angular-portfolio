@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ProjectService } from '../../services/project.service';
 import { IProject } from '../../models/project.model';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
+import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
 // import { BehaviorSubject } from 'rxjs'; // subject
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ProjectCardComponent],
+  imports: [PageHeaderComponent, CommonModule, ProjectCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

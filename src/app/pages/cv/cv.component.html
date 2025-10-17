@@ -1,6 +1,7 @@
 <section class="cv__wrapper">
   <!-- <h1>CV</h1> -->
   <div class="cv__education">
+    <app-page-header [pageTitle]="'CV'"></app-page-header>
     <h2 class="cv__heading">Education</h2>
     @for (edu of educationSignal(); track edu.id) {
     <!-- <h2>{{ edu.program }}</h2>
