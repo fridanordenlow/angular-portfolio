@@ -1,5 +1,12 @@
 <main>
-  <div class="page-container">
+  <div
+    class="page-container"
+    [ngClass]="{
+      mobile: breakpointService.isMobile(),
+      tablet: breakpointService.isTablet(),
+      desktop: breakpointService.isDesktop()
+    }"
+  >
     <app-header [title]="'Frida Nordenlöw Portfolio'"></app-header>
     <router-outlet />
   </div>
