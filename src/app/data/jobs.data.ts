@@ -4,8 +4,7 @@ export const jobs: IJob[] = [
   {
     id: 'iittala',
     company: 'Iittala Outlet Gustavsberg',
-    position:
-      'Sales & Visual Merchandising (Butikssäljare & Visual Merchandising-ansvarig)',
+    position: 'Sales Associate & Visual Merchandising Coordinator',
     startDate: 'Aug 2022',
     endDate: 'Present',
     location: 'Gustavsberg, Värmdö',
@@ -15,7 +14,7 @@ export const jobs: IJob[] = [
   {
     id: 'litet-nystan',
     company: 'Litet nystan',
-    position: 'Sales & Customer Advisor (Butikssäljare & Kundrådgivare)',
+    position: 'Sales & Customer Advisor',
     startDate: 'Oct 2019',
     endDate: 'Aug 2022',
     location: 'Södermalm, Stockholm',
@@ -25,8 +24,7 @@ export const jobs: IJob[] = [
   {
     id: 'ma-baker',
     company: 'MA Baker, AB Geten',
-    position:
-      'Kitchen, Serving & Cashier Staff (Kök-, serverings- & kassapersonal)',
+    position: 'Kitchen, Serving & Cashier Staff',
     startDate: 'Dec 2017',
     endDate: 'Oct 2019',
     location: 'Kärrtorp, Stockholm',
@@ -36,7 +34,7 @@ export const jobs: IJob[] = [
   {
     id: 'dalslands-kanal',
     company: 'Dalslands Kanal AB',
-    position: 'Lock Operator Assistant (Slussvaktsbiträde)',
+    position: 'Lock Operator Assistant',
     startDate: 'Summer 2016',
     endDate: 'Summer 2016',
     location: 'Billingsfors, Dalsland',
