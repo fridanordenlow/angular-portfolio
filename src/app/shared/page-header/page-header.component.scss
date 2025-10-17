@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+h2 {
+  color: black;
+  font-size: $font-size-heading-sm;
+  font-weight: $fw-black;
+  margin-bottom: 65px;
+
+  @media (min-width: 667px) {
+    font-size: $font-size-heading-lg;
+    margin-bottom: $space-lg;
+  }
+}
