@@ -1,16 +1,13 @@
 <section class="cv__wrapper">
-  <!-- <h1>CV</h1> -->
+  <app-page-header [pageTitle]="'CV'"></app-page-header>
   <div class="cv__education">
-    <app-page-header [pageTitle]="'CV'"></app-page-header>
-    <h2 class="cv__heading">Education</h2>
+    <h3 class="cv__heading cv__heading--education">Education</h3>
     @for (edu of educationSignal(); track edu.id) {
-    <!-- <h2>{{ edu.program }}</h2>
-      <h3>{{ edu.school }}</h3> -->
     <app-education-card [education]="edu"></app-education-card>
     }
   </div>
   <div class="cv__jobs">
-    <h2 class="cv__heading">Jobs</h2>
+    <h3 class="cv__heading cv__heading--jobs">Jobs</h3>
     @for (job of jobSignal(); track job.id) {
     <app-job-card [job]="job"></app-job-card>
     }

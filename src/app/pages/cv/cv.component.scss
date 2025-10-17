@@ -1,17 +1,30 @@
 @use "variables" as *;
 
-.cv__wrapper {
-  // display: flex;
-  gap: $space-md;
-
-  h1 {
-    font-weight: $fw-black;
-    color: #e58ca1;
+.cv {
+  &__wrapper {
+    // display: flex;
+    gap: $space-md;
   }
-}
-.cv__heading {
-  font-size: $font-size-heading-sm;
-  font-weight: $fw-black;
-  padding: $space-lg 0;
-  text-decoration: underline;
+
+  &__education,
+  &__jobs {
+    margin-top: $space-md;
+  }
+
+  &__heading {
+    font-family: $secondary-font;
+    font-style: italic;
+    font-size: $font-size-heading-sm;
+    font-weight: $fw-black;
+    color: $blue;
+    padding-left: $space-lg;
+    // text-decoration: underline;
+  }
+  &__heading--education {
+    color: $blue;
+  }
+
+  &__heading--jobs {
+    color: $pink;
+  }
 }

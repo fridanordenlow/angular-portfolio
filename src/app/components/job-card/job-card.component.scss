@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+.job-card {
+  display: flex;
+
+  &__date {
+    font-weight: $fw-medium;
+  }
+
+  &__location {
+    font-weight: $fw-medium;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    font-size: $font-size-md;
+  }
+}

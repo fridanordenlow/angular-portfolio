@@ -1,7 +1,13 @@
 <article class="card education-card">
-  <h2 class="education-card__program">{{ education().program }}</h2>
-  <h3 class="education-card__school">{{ education().school }}</h3>
-  <p class="education-card__date">
-    {{ education().startDate }} - {{ education().endDate }}
-  </p>
+  <div>
+    <h3 class="education-card__program">{{ education().program }}</h3>
+    <h4 class="education-card__school">&#64; {{ education().school }}</h4>
+    <p class="education-card__date">
+      {{ education().startDate }} - {{ education().endDate }}
+    </p>
+    <p class="education-card__location">{{ education().location }}</p>
+  </div>
+  <div>
+    <p class="education-card__description">{{ education().description }}</p>
+  </div>
 </article>

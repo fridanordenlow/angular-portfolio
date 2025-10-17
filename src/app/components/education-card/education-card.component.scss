@@ -2,4 +2,12 @@
 
 .education-card {
   // padding: $space-sm;
+
+  &__date {
+    font-weight: $fw-medium;
+  }
+
+  &__location {
+    font-weight: $fw-medium;
+  }
 }
