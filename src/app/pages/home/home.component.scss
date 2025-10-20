@@ -10,15 +10,11 @@
     flex: 1;
     padding-top: $space-xl;
 
-    @media (min-width: 667px) {
+    @media (min-width: $bp-small) {
       align-items: center;
       justify-content: center;
       width: 60%;
       // padding: $space-lg $space-sm;
-    }
-
-    @media (min-width: 1200px) {
-      flex: 1;
     }
   }
 
