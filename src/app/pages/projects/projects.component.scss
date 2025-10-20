@@ -1,10 +1,16 @@
 @use "variables" as *;
 
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  gap: 2rem;
+  row-gap: 3rem;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 1;
 
   &__heading {
     font-size: $font-size-heading-sm;

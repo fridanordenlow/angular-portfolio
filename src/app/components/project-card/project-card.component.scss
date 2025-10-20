@@ -1,78 +1,33 @@
 @use "variables" as *;
 
 .project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-bottom: $space-lg;
-
-  @media (min-width: $bp-medium) {
-    flex-direction: row;
-    gap: $space-md;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 1000px;
-  }
-
-  &__image-wrapper {
-    width: 100%;
-    margin-bottom: $space-sm;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-
-    @media (min-width: $bp-medium) {
-      width: 50%;
-      margin-right: $space-sm;
-    }
-  }
-
   &__image {
     object-fit: cover;
     object-position: top;
     width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  &__info-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-
-    @media (min-width: $bp-medium) {
-      width: 50%;
-    }
+    height: auto;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: $space-sm;
   }
 
   &__heading {
     font-weight: $fw-black;
     font-size: $font-size-heading-sm;
-    margin-bottom: $space-xs;
-
-    // @media (min-width: $bp-medium) {
-    //   font-size: $font-size-heading-sm;
-    // }
+    margin-bottom: $space-xxs;
   }
 
   &__description {
     font-family: "EB Garamond";
     font-size: $font-size-xl;
-    margin-bottom: $space-sm;
-
-    @media (min-width: $bp-small) {
-      // font-size: $font-size-lg;
-      line-height: $line-height-lg;
-      margin-bottom: $space-md;
-    }
+    margin-bottom: $space-md;
   }
 
   &__languages {
     display: flex;
     flex-wrap: wrap;
     gap: $space-xs;
-    margin-bottom: $space-sm;
+    margin-bottom: $space-md;
   }
 
   &__language {
@@ -83,8 +38,7 @@
   }
 
   &__buttons {
-    margin-top: auto;
     display: flex;
-    gap: $space-xs;
+    gap: $space-sm;
   }
 }
