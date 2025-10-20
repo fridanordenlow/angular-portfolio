@@ -1,16 +1,15 @@
 @use "variables" as *;
 
-.page-container {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 0 $space-xl $space-xl $space-xl;
-}
+// .page-container {
+//   display: flex;
+//   flex-direction: column;
+//   max-width: 1400px;
+//   min-height: 100vh;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // flex: 1;
+//   padding: 0 $space-xl $space-xl $space-xl;
+// }
 
 /* Test responsive styling */
 // .mobile {
