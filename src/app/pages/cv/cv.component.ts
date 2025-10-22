@@ -23,7 +23,7 @@ import { Subscription } from 'rxjs';
 export class CvComponent implements OnInit, OnDestroy {
   educationSignal: WritableSignal<IEducation[]> = signal([]);
   jobSignal: WritableSignal<IJob[]> = signal([]);
-  subscribe = new Subscription();
+  subscription = new Subscription();
 
   constructor(
     private educationService: EducationService,
@@ -31,13 +31,13 @@ export class CvComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.subscribe.add(
+    this.subscription.add(
       this.educationService.getEducation().subscribe((education) => {
         this.educationSignal.set(education);
       })
     );
 
-    this.subscribe.add(
+    this.subscription.add(
       this.jobService.getJobs().subscribe((jobs) => {
         this.jobSignal.set(jobs);
       })
@@ -45,6 +45,6 @@ export class CvComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscribe.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }

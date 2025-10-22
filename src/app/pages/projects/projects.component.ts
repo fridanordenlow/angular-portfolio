@@ -25,18 +25,20 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   // projects$ = this.projectSubject.asObservable(); // subject
 
   projectSignal: WritableSignal<IProject[]> = signal([]);
-  subscribe = new Subscription();
+  subscription = new Subscription();
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    this.projectService.getProjects().subscribe((projects) => {
-      // this.projectSubject.next(projects); // subject
-      this.projectSignal.set(projects);
-    });
+    this.subscription.add(
+      this.projectService.getProjects().subscribe((projects) => {
+        // this.projectSubject.next(projects); // subject
+        this.projectSignal.set(projects);
+      })
+    );
   }
 
   ngOnDestroy(): void {
-    this.subscribe.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }
