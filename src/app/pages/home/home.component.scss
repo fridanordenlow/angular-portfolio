@@ -14,7 +14,7 @@
       align-items: center;
       justify-content: center;
       width: 60%;
-      // padding: $space-lg $space-sm;
+      padding: $space-lg;
     }
   }
 
@@ -58,15 +58,13 @@
 
   &__profession {
     &--primary {
-      font-family: $primary-font;
       font-size: $font-size-heading-sm;
       font-weight: $fw-black;
       color: $blue;
     }
 
     &--secondary {
-      font-family: $primary-font;
-      font-size: $font-size-xl;
+      font-size: $font-size-heading-xs;
       font-weight: $fw-medium;
       color: $dark-grey;
     }
@@ -74,15 +72,9 @@
 
   &__paragraph {
     font-family: $secondary-font;
-    font-size: $font-size-lg;
     font-weight: $fw-regular;
-    // line-height: $line-height-xl;
+    line-height: $line-height-lg;
     margin-top: $space-lg;
-    // margin-right: $space-lg;
-
-    @media (min-width: 850px) {
-      margin-right: $space-xl;
-    }
 
     a {
       color: black;
