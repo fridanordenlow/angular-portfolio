@@ -2,6 +2,16 @@ import { IJob } from '../models/job.model';
 
 export const jobs: IJob[] = [
   {
+    id: 'knightec',
+    company: 'Knightec, Digital Design & Experience',
+    position: 'Frontend Development Intern',
+    startDate: 'Oct 2025',
+    endDate: 'Dec 2025',
+    location: 'Solna, Stockholm',
+    description:
+      'Applied theoretical knowledge in real projects while learning professional workflows and tools. Developed problem-solving, coding, and team collaboration skills, and gained insight into agile methodologies. Participated in workshops, client meetings, planning sessions, and sprint demos. Worked with modern frontend frameworks and tools, gaining hands-on experience in professional development workflows (currently learning Angular).',
+  },
+  {
     id: 'iittala',
     company: 'Iittala Outlet Gustavsberg',
     position: 'Sales Associate & Visual Merchandising Coordinator',
