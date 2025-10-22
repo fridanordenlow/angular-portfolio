@@ -3,6 +3,10 @@
 .job-card {
   display: flex;
 
+  &__company {
+    margin-bottom: $space-xs;
+  }
+
   &__date {
     font-weight: $fw-medium;
   }
@@ -13,6 +17,6 @@
 
   &__description {
     font-family: $secondary-font;
-    font-size: $font-size-md;
+    //  font-size: $font-size-md;
   }
 }

@@ -1,7 +1,9 @@
 @use "variables" as *;
 
 .education-card {
-  // padding: $space-sm;
+  &__school {
+    margin-bottom: $space-xs;
+  }
 
   &__date {
     font-weight: $fw-medium;
@@ -9,5 +11,10 @@
 
   &__location {
     font-weight: $fw-medium;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    // font-size: $font-size-md; // Maybe remove
   }
 }
