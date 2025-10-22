@@ -1,15 +1,17 @@
-<section class="cv__wrapper">
-  <app-page-header [pageTitle]="'CV'"></app-page-header>
-  <div class="cv__education">
-    <h3 class="cv__heading cv__heading--education">Education</h3>
-    @for (edu of educationSignal(); track edu.id) {
-    <app-education-card [education]="edu"></app-education-card>
-    }
-  </div>
-  <div class="cv__jobs">
-    <h3 class="cv__heading cv__heading--jobs">Jobs</h3>
-    @for (job of jobSignal(); track job.id) {
-    <app-job-card [job]="job"></app-job-card>
-    }
+<section>
+  <!-- <app-page-header [pageTitle]="'CV'"></app-page-header> -->
+  <div class="cv__wrapper">
+    <div class="cv__education">
+      <h2 class="cv__heading cv__heading--education">Education</h2>
+      @for (edu of educationSignal(); track edu.id) {
+      <app-education-card [education]="edu"></app-education-card>
+      }
+    </div>
+    <div class="cv__jobs">
+      <h2 class="cv__heading cv__heading--jobs">Selected Experience</h2>
+      @for (job of jobSignal(); track job.id) {
+      <app-job-card [job]="job"></app-job-card>
+      }
+    </div>
   </div>
 </section>

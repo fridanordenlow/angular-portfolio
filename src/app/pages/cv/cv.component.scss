@@ -2,7 +2,8 @@
 
 .cv {
   &__wrapper {
-    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: $space-md;
   }
 
@@ -12,13 +13,14 @@
   }
 
   &__heading {
-    font-family: $secondary-font;
+    // font-family: $secondary-font;
     font-style: italic;
     font-size: $font-size-heading-sm;
-    font-weight: $fw-black;
+    font-weight: $fw-bold;
     color: $blue;
     padding-left: $space-lg;
-    // text-decoration: underline;
+    padding-bottom: $space-sm;
+    text-decoration: underline;
   }
   &__heading--education {
     color: $blue;
