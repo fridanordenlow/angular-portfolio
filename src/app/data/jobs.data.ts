@@ -4,7 +4,7 @@ export const jobs: IJob[] = [
   {
     id: 'knightec',
     company: 'Knightec, Digital Design & Experience',
-    position: 'Frontend Development Intern',
+    position: 'Front End Development Intern',
     startDate: 'Oct 2025',
     endDate: 'Dec 2025',
     location: 'Solna, Stockholm',
