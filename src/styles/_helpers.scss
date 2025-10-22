@@ -1,0 +1,8 @@
+// $min: minimum font size (rem)
+// $max: maximum font size (rem)
+// Returns clamp(MIN, VW-based, MAX)
+@function fluid-font($min, $max) {
+  // Calculate a "slope" for scaling with viewport width
+  $slope: ($max - $min) / 100; // 100vw = full width
+  @return clamp(#{$min}, #{$min} + #{$slope} * 1vw, #{$max});
+}
