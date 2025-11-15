@@ -41,14 +41,14 @@ export const jobs: IJob[] = [
     description:
       'Worked in kitchen, serving, and cashier roles, providing customer service and supporting daily operations.',
   },
-  {
-    id: 'dalslands-kanal',
-    company: 'Dalslands Kanal AB',
-    position: 'Lock Operator Assistant',
-    startDate: 'Summer 2016',
-    endDate: 'Summer 2016',
-    location: 'Billingsfors, Dalsland',
-    description:
-      'Assisted with lock operations during the summer season at Dalslands Canal.',
-  },
+  // {
+  //   id: 'dalslands-kanal',
+  //   company: 'Dalslands Kanal AB',
+  //   position: 'Lock Operator Assistant',
+  //   startDate: 'Summer 2016',
+  //   endDate: 'Summer 2016',
+  //   location: 'Billingsfors, Dalsland',
+  //   description:
+  //     'Assisted with lock operations during the summer season at Dalslands Canal.',
+  // },
 ];
