@@ -3,7 +3,7 @@ import { IJob } from '../models/job.model';
 export const jobs: IJob[] = [
   {
     id: 'knightec',
-    company: 'Knightec, Digital Design & Experience',
+    company: 'Knightec Group, Digital Design & Experience',
     position: 'Front End Development Intern',
     startDate: 'Oct 2025',
     endDate: 'Dec 2025',
