@@ -13,20 +13,20 @@
   }
 
   &__heading {
-    // font-family: $secondary-font;
+    font-family: $font-bebas;
     font-style: italic;
     font-size: $font-size-heading-sm;
     font-weight: $fw-bold;
     color: $blue;
-    padding-left: $space-lg;
-    padding-bottom: $space-sm;
-    text-decoration: underline;
+    // padding-left: $space-lg;
+    padding-bottom: $space-xxs;
+    // text-decoration: underline;
   }
   &__heading--education {
     color: $blue;
   }
 
   &__heading--jobs {
-    color: $pink;
+    color: $green;
   }
 }

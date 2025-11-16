@@ -9,7 +9,7 @@ nav {
   a {
     font-family: $primary-font;
     font-weight: $fw-medium;
-    font-size: clamp(#{$font-size-sm}, 1.75rem, #{$font-size-xl});
+    font-size: clamp(#{$font-size-sm}, 1.75rem, #{$font-size-lg});
     color: black;
     text-decoration: none;
 

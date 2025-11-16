@@ -1,6 +1,10 @@
 /* Font families */
 $primary-font: "Satoshi", sans-serif;
 $secondary-font: "EB Garamond", serif;
+$font-oswald: "Oswald", sans-serif;
+$font-bebas: "Bebas Neue", sans-serif;
+$font-gothic: "Special Gothic Expanded One", sans-serif;
+$font-rubik: "Rubik Mono One", monospace;
 
 /* Font size */
 $font-size-xxs: 0.75rem; // 12px
@@ -32,12 +36,17 @@ $line-height-lg: 2rem; // 32px
 $line-height-xl: 2.5rem; // 40px
 
 /* Colors */
-$primary-bg-color: white;
-$secondary-bg-color: rgb(215, 225, 234);
+$primary-bg-color: #f1f1f1;
+$secondary-bg-color: #d7e1ea;
+$red: #eb5843;
+// $red: #b73a1f;
 $pink: #e58ca1;
 $blue: #86b8d7;
-$grey: rgb(175, 175, 175);
+$green: #4e8759;
+$grey: #afafaf;
+$light-grey: #e8e8e8;
 $dark-grey: #565656;
+$black: #191919;
 
 /* Breakpoints */
 $bp-small: 667px;

@@ -6,25 +6,26 @@
   align-items: flex-start;
 
   &__heading {
-    font-size: $font-size-heading-sm;
+    // font-family: $font-bebas;
+    // font-size: $font-size-heading-sm;
     font-weight: $fw-black;
     margin-bottom: $space-xs;
 
     @media (min-width: 667px) {
-      font-size: $font-size-heading-md;
+      // font-size: $font-size-heading-md;
       margin-bottom: $space-sm;
     }
   }
 
   &__introduction {
     font-family: $secondary-font;
-    font-size: $font-size-lg;
+    // font-size: $font-size-lg;
     line-height: $line-height-lg;
     margin-bottom: $space-lg;
     max-width: 600px;
 
     @media (min-width: 667px) {
-      font-size: $font-size-lg;
+      // font-size: $font-size-lg;
       line-height: $line-height-lg;
       margin-bottom: $space-xxl;
     }
