@@ -7,7 +7,7 @@ export const projects: IProject[] = [
     title: 'Textile Webshop',
     description:
       'A fictional webshop application for textiles, built with vanilla JavaScript. This project includes functionalities such as listing products, sorting and filtering, managing a shopping cart, and placing orders through a form.',
-    techLanguages: ['Javascript', 'HTML5', 'SASS'],
+    techLanguages: ['Javascript', 'HTML', 'SASS'],
     githubLink: 'project-everyday-textile-webshop',
     deployedLink:
       'https://fridanordenlow.github.io/project-everyday-textile-webshop/',
@@ -17,7 +17,7 @@ export const projects: IProject[] = [
     title: 'Jazz Up Quiz',
     description:
       'An engaging and user-friendly music quiz game emphasizing accessible design and intuitive feedback. Features randomized questions, multiple-choice answers, a scoring system with speed bonuses, and a final summary showing score and time.',
-    techLanguages: ['JavaScript', 'Typescript', 'HTML5', 'CSS3', 'SASS'], // UPPDATERA
+    techLanguages: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'SASS'], // UPPDATERA
     githubLink: 'project-jazzy-music-quiz',
     deployedLink: 'https://fridanordenlow.github.io/project-jazzy-music-quiz/',
   },
@@ -26,7 +26,7 @@ export const projects: IProject[] = [
     title: 'Old School Labyrinth Game',
     description:
       'A little labyrinth game built in React where we worked with storing the current state of the game using thunks and async actions in Redux. We flirted with some coding visual elements in the design.',
-    techLanguages: ['Redux', 'React', 'JSX', 'Javascript', 'CSS3'],
+    techLanguages: ['Redux', 'React', 'Javascript', 'CSS'],
     githubLink: 'project-labyrinth',
     // deployedLink: 'reliable-sorbet-d720d3'
     deployedLink: 'https://reliable-sorbet-d720d3.netlify.app/',
@@ -36,7 +36,7 @@ export const projects: IProject[] = [
     title: 'To Do List Web App',
     description:
       'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
-    techLanguages: ['Redux', 'React', 'JSX', 'Javascript', 'CSS3'],
+    techLanguages: ['Redux', 'React', 'Javascript', 'CSS'],
     githubLink: 'project-todos',
     // deployedLink: 'to-do-list-by-frida'
     deployedLink: 'https://to-do-list-by-frida.netlify.app/',
@@ -46,7 +46,7 @@ export const projects: IProject[] = [
     title: 'Movie Page',
     description:
       'In this project I worked with two Technigo teammates to make a movie site that collected data from an API. We learned how to work and implement new React hooks and functions to enable us to create and navigate to multiple pages.',
-    techLanguages: ['React', 'JSX', 'Javascript', 'CSS3'],
+    techLanguages: ['React', 'Javascript', 'CSS'],
     githubLink: 'project-movies',
     deployedLink: 'https://cosmic-daffodil-7c032f.netlify.app/',
   },
