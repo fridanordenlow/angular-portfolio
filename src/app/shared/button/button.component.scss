@@ -8,7 +8,7 @@ button {
   color: black;
   // background-color: rgb(138, 182, 138);
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 
@@ -19,7 +19,7 @@ button {
 
 .btn {
   &--github {
-    background-color: $pink;
+    background-color: $green;
     color: white;
 
     // @media (min-width: 1024px) {
