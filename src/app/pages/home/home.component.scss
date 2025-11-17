@@ -73,7 +73,7 @@
   &__paragraph {
     font-family: $secondary-font;
     font-weight: $fw-regular;
-    line-height: $line-height-lg;
+    // line-height: $line-height-md;
     margin-top: $space-lg;
 
     a {
@@ -82,7 +82,7 @@
       text-decoration: underline 1px;
 
       &:hover {
-        color: $pink;
+        color: $green;
       }
     }
   }
@@ -90,31 +90,31 @@
   &__links {
     display: flex;
     justify-content: space-between;
-    align-self: start;
+    align-self: center;
     width: 150px;
     margin-top: $space-xl;
   }
 
   &__icon {
     color: $grey;
-    font-size: $font-size-heading-sm;
+    font-size: $font-size-xl;
 
     &:hover {
-      color: $pink;
+      color: $green;
     }
   }
 
   &__textile {
     display: none;
 
-    @media (min-width: 850px) {
+    @media (min-width: $bp-medium) {
       display: flex;
       width: 40%;
       align-items: stretch;
       justify-content: center;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $bp-large) {
       flex: 1;
     }
   }
