@@ -11,12 +11,11 @@ import { EducationCardComponent } from '../../components/education-card/educatio
 import { JobCardComponent } from '../../components/job-card/job-card.component';
 import { IJob } from '../../models/job.model';
 import { JobService } from '../../services/job.service';
-import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-cv',
-  imports: [PageHeaderComponent, EducationCardComponent, JobCardComponent],
+  imports: [EducationCardComponent, JobCardComponent],
   templateUrl: './cv.component.html',
   styleUrl: './cv.component.scss',
 })
