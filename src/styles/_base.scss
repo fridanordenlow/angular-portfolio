@@ -7,7 +7,13 @@ html {
 
 body {
   font-family: $primary-font;
-  font-size: clamp(#{$font-size-md}, 1vw + 0.5rem, #{$font-size-lg});
+  // font-size: clamp(#{$font-size-md}, 1vw + 0.5rem, #{$font-size-lg});
+  font-size: clamp(
+    #{$font-size-md},
+    calc(#{$font-size-heading-md} + 1.5vw),
+    #{$font-size-lg}
+  );
+  line-height: $line-height-md;
 }
 
 main {
@@ -17,11 +23,24 @@ main {
 
 /* Responsive typography */
 h1 {
-  font-size: clamp(#{$font-size-heading-sm}, 3vw, #{$font-size-heading-xxl});
+  color: $red;
+  font-family: $font-oswald;
+  font-size: clamp(
+    #{$font-size-heading-md},
+    calc(#{$font-size-heading-md} + 1.5vw),
+    #{$font-size-heading-xl}
+  );
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: clamp(#{$font-size-heading-sm}, 3vw, #{$font-size-heading-xl});
+  font-family: $font-bebas;
+  font-size: clamp(
+    #{$font-size-heading-xs},
+    calc(#{$font-size-heading-xs} + 1vw),
+    #{$font-size-heading-md}
+  );
 }
 
 .page-container {
@@ -29,10 +48,11 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 $space-xxl $space-xxl $space-xxl;
+  padding: 0 $space-lg $space-lg $space-lg;
 
   @media (min-width: $bp-medium) {
     max-width: 1400px;
+    padding: 0 $space-xxl $space-xxl $space-xxl;
   }
 }
 
