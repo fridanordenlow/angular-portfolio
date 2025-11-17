@@ -58,13 +58,13 @@
 
   &__profession {
     &--primary {
-      font-size: $font-size-heading-sm;
+      // font-size: $font-size-heading-sm;
       font-weight: $fw-black;
       color: $blue;
     }
 
     &--secondary {
-      font-size: $font-size-heading-xs;
+      // font-size: $font-size-heading-xs;
       font-weight: $fw-medium;
       color: $dark-grey;
     }
@@ -93,6 +93,10 @@
     align-self: center;
     width: 150px;
     margin-top: $space-xl;
+
+    @media (min-width: $bp-medium) {
+      align-self: flex-start;
+    }
   }
 
   &__icon {
