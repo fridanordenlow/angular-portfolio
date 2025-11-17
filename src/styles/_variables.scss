@@ -17,10 +17,10 @@ $font-size-xxl: 1.75rem; // 28px
 $font-size-heading-xxs: 1.25rem; // 20px
 $font-size-heading-xs: 1.5rem; // 24px
 $font-size-heading-sm: 2rem; // 32px
-$font-size-heading-md: 2.5rem; // 40px
-$font-size-heading-lg: 3rem; // 48px
-$font-size-heading-xl: 4rem; // 64px
-$font-size-heading-xxl: 5rem; // 80px
+$font-size-heading-md: 2.25rem; // ?
+$font-size-heading-lg: 2.5rem; // ?
+$font-size-heading-xl: 3rem; // 48px
+$font-size-heading-xxl: 4rem;
 
 /* Font weight */
 $fw-regular: 400;
@@ -30,18 +30,18 @@ $fw-bold: 700;
 $fw-black: 800;
 
 /* Line heights */
-$line-height-sm: 1rem; // 16px
-$line-height-md: 1.5rem; // 24px
-$line-height-lg: 2rem; // 32px
-$line-height-xl: 2.5rem; // 40px
+$line-height-sm: 1.2;
+$line-height-md: 1.4;
+$line-height-lg: 1.6;
 
 /* Colors */
 $primary-bg-color: #f1f1f1;
 $secondary-bg-color: #d7e1ea;
 $red: #eb5843;
-// $red: #b73a1f;
+$dark-red: #b73a1f;
 $pink: #e58ca1;
-$blue: #86b8d7;
+$blue: #4e89ae;
+// $blue: #86b8d7;
 $green: #4e8759;
 $grey: #afafaf;
 $light-grey: #e8e8e8;
