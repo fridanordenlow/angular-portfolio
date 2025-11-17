@@ -5,15 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: $space-xl 0;
+  padding: $space-lg 0;
 
-  h1 {
-    color: $red;
-    font-family: $font-oswald;
-    font-size: $font-size-heading-md;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
-  }
+  // h1 {
+  //   color: $red;
+  //   font-family: $font-oswald;
+  //   // font-size: $font-size-heading-md;
+  //   text-transform: uppercase;
+  //   letter-spacing: -0.02em;
+  // }
 
   @media (min-width: $bp-medium) {
     flex-direction: row;
