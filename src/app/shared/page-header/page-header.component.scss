@@ -1,11 +1,12 @@
 @use "variables" as *;
 
 h2 {
-  color: black;
-  font-size: $font-size-heading-md;
+  color: $green;
+
+  // font-size: $font-size-heading-md;
   font-weight: $fw-black;
 
-  // @media (min-width: 667px) {
+  // @media (min-width: $bp-small) {
   //   font-size: $font-size-heading-lg;
   //   margin-bottom: $space-lg;
   // }
