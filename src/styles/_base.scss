@@ -23,11 +23,13 @@ main {
 
 /* Responsive typography */
 h1 {
+  display: inline-block;
+  white-space: nowrap;
   color: $red;
   font-family: $font-oswald;
   font-size: clamp(
-    #{$font-size-heading-md},
-    calc(#{$font-size-heading-md} + 1.5vw),
+    #{$font-size-heading-sm},
+    calc(#{$font-size-heading-sm} + 2vw),
     #{$font-size-heading-xl}
   );
   text-transform: uppercase;
@@ -49,6 +51,10 @@ h2 {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 $space-lg $space-lg $space-lg;
+
+  @media (min-width: $bp-small) {
+    padding: 0 $space-xl $space-xl $space-xl;
+  }
 
   @media (min-width: $bp-medium) {
     max-width: 1400px;
