@@ -46,6 +46,10 @@ h2 {
   );
 }
 
+h3 {
+  font-size: $font-size-heading-xxs;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -53,11 +57,11 @@ h2 {
   margin: 0 auto;
   padding: 0 $space-lg $space-lg $space-lg;
 
-  @media (min-width: $bp-small) {
+  @media (min-width: $bp-medium) {
     padding: 0 $space-xl $space-xl $space-xl;
   }
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     max-width: 1400px;
     padding: 0 $space-xxl $space-xxl $space-xxl;
   }
