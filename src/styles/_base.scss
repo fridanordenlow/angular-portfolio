@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   // font-size: clamp(#{$font-size-md}, 1vw + 0.5rem, #{$font-size-lg});
   font-size: clamp(
     #{$font-size-md},
@@ -40,14 +40,24 @@ h1 {
 h2 {
   font-family: $font-bebas;
   font-size: clamp(
-    #{$font-size-heading-xs},
-    calc(#{$font-size-heading-xs} + 1vw),
+    #{$font-size-heading-xxs},
+    calc(#{$font-size-heading-xxs} + 1vw),
     #{$font-size-heading-md}
   );
 }
 
 h3 {
   font-size: $font-size-heading-xxs;
+}
+
+p {
+  font-family: $secondary-font;
+  font-size: $font-size-md;
+}
+
+span {
+  font-family: $primary-font;
+  font-size: $font-size-md;
 }
 
 .page-container {
