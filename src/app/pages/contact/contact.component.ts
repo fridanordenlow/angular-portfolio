@@ -1,11 +1,12 @@
 import { Component, type OnInit } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
-import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
+import { ContactCard } from '../../components/contact-card/contact-card';
+// import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [PageHeaderComponent, NgOptimizedImage],
+  imports: [ContactCard],
+  // imports: [NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
