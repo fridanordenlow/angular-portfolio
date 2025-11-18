@@ -1,10 +1,25 @@
 @use "variables" as *;
 
 .cv {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-    gap: $space-md;
+    gap: $space-xl;
+  }
+
+  &__skills--group {
+    border-bottom: 4px solid black;
+    padding-left: $space-sm;
+  }
+
+  &__skills--list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 $space-lg 0;
   }
 
   &__education,
@@ -14,16 +29,22 @@
 
   &__heading {
     font-family: $font-bebas;
-    font-style: italic;
     font-size: $font-size-heading-sm;
     font-weight: $fw-bold;
     color: $blue;
-    // padding-left: $space-lg;
     padding-bottom: $space-xxs;
-    // text-decoration: underline;
   }
+
+  &__heading--tech {
+    color: $dark-red;
+  }
+
+  &__heading--soft {
+    color: $pink;
+  }
+
   &__heading--education {
-    color: $blue;
+    color: $red;
   }
 
   &__heading--jobs {

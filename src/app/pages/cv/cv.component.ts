@@ -5,6 +5,7 @@ import {
   WritableSignal,
   type OnInit,
 } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { IEducation } from '../../models/education.model';
 import { EducationService } from '../../services/education.service';
 import { EducationCardComponent } from '../../components/education-card/education-card.component';
@@ -12,10 +13,16 @@ import { JobCardComponent } from '../../components/job-card/job-card.component';
 import { IJob } from '../../models/job.model';
 import { JobService } from '../../services/job.service';
 import { Subscription } from 'rxjs';
+import { ContactCard } from '../../components/contact-card/contact-card';
 
 @Component({
   selector: 'app-cv',
-  imports: [EducationCardComponent, JobCardComponent],
+  imports: [
+    ContactCard,
+    EducationCardComponent,
+    JobCardComponent,
+    NgOptimizedImage,
+  ],
   templateUrl: './cv.component.html',
   styleUrl: './cv.component.scss',
 })
