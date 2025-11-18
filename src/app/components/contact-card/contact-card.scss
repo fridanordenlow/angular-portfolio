@@ -1,0 +1,77 @@
+@use "variables" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  padding: 0 0 $space-md $space-xl;
+  border-left: 4px solid $black;
+
+  &__image-titles {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    @media (min-width: $bp-small) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+    object-position: 10% 90%;
+    display: none;
+
+    @media (min-width: $bp-small) {
+      margin-right: $space-lg;
+      display: block;
+    }
+  }
+
+  &__titles {
+    align-self: center;
+  }
+
+  &__profession {
+    &--primary {
+      font-weight: $fw-black;
+      color: $blue;
+    }
+
+    &--secondary {
+      font-weight: $fw-medium;
+      color: $dark-grey;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    // gap: $space-sm;
+    // align-items: flex-start;
+    // justify-content: center;
+
+    h3 {
+      padding-bottom: $space-xxs;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+
+    &-link {
+      color: black;
+      font-size: $font-size-xl;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
