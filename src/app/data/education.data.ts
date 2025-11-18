@@ -28,7 +28,7 @@ export const education: IEducation[] = [
   },
   {
     id: 'konstfack-master',
-    school: 'Konstfack – University of Arts, Crafts and Design',
+    school: 'Konstfack, University of Arts, Crafts and Design',
     program: 'CRAFT! Textile',
     degree: 'Master of Fine Arts',
     credits: '120 HP',
@@ -41,7 +41,7 @@ export const education: IEducation[] = [
   },
   {
     id: 'hdk-bachelor',
-    school: 'University of Gothenburg – HDK Steneby',
+    school: 'HDK Steneby, University of Gothenburg',
     program: 'Textile–Clothing–Design',
     degree: 'Bachelor of Fine Arts',
     credits: '180 HP',
@@ -55,7 +55,7 @@ export const education: IEducation[] = [
   {
     id: 'steneby-textile-prep',
     school: 'Stenebyskolan',
-    program: 'Art, Design, and Craft – University Preparatory Textile',
+    program: 'Art, Design, and Craft, University Preparatory Textile',
     fieldOfStudy: 'Textile and Craft',
     startDate: 'Aug 2013',
     endDate: 'Jun 2014',
@@ -66,7 +66,7 @@ export const education: IEducation[] = [
   {
     id: 'saterglantan-knitting',
     school: 'Sätergläntan Institute of Handicraft',
-    program: 'Knitting',
+    program: 'Traditional Knitting',
     fieldOfStudy: 'Textile Craft',
     startDate: 'Aug 2012',
     endDate: 'Jun 2013',
@@ -77,7 +77,7 @@ export const education: IEducation[] = [
   {
     id: 'vrg-gymnasium',
     school: 'Viktor Rydberg Gymnasium',
-    program: 'Arts Programme – Social Science Profile',
+    program: 'Arts Programme, Social Science Profile',
     // program:
     //   'Estetiska programmet (Arts Programme) – Samhällsvetenskaplig profil (Social Science Profile)',
     degree: 'Gymnasieexamen (Upper Secondary School Diploma)',
