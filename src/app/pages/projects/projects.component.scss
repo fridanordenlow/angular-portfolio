@@ -32,6 +32,16 @@
       margin-bottom: $space-xxl;
     }
   }
+
+  a {
+    color: black;
+    font-style: italic;
+    text-decoration: underline 1px;
+
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 .grid-auto-fill {
