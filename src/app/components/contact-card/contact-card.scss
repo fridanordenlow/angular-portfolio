@@ -13,7 +13,7 @@
     align-self: flex-start;
 
     @media (min-width: $bp-small) {
-      flex-direction: row;
+      //   flex-direction: row;
     }
   }
 
@@ -22,16 +22,17 @@
     object-fit: cover;
     align-self: center;
     object-position: 10% 90%;
-    display: none;
+    // display: none;
 
     @media (min-width: $bp-small) {
       margin-right: $space-lg;
-      display: block;
+      //   display: block;
     }
   }
 
   &__titles {
     align-self: center;
+    margin-top: $space-md;
   }
 
   &__profession {
