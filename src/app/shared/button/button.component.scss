@@ -3,12 +3,11 @@
 button {
   padding: $space-xs $space-sm;
   font-family: $primary-font;
-  font-size: $font-size-md;
+  font-size: $font-size-sm;
   font-weight: $fw-semibold;
-  color: black;
-  // background-color: rgb(138, 182, 138);
+  color: $black;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 
@@ -21,21 +20,10 @@ button {
   &--github {
     background-color: $green;
     color: white;
-
-    // @media (min-width: 1024px) {
-    //   width: 200px;
-    //   height: 48px;
-    // }
   }
 
   &--demo {
-    // margin-left: $space-sm;
     background-color: $blue;
     color: white;
-
-    // @media (min-width: 1024px) {
-    //   width: 164px;
-    //   height: 48px;
-    // }
   }
 }
