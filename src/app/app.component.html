@@ -1,13 +1,13 @@
-<main>
-  <div
-    class="page-container"
-    [ngClass]="{
-      mobile: breakpointService.isMobile(),
-      tablet: breakpointService.isTablet(),
-      desktop: breakpointService.isDesktop()
-    }"
-  >
-    <app-header [title]="'Frida Nordenlöw'"></app-header>
+<div
+  class="page-container"
+  [ngClass]="{
+    mobile: breakpointService.isMobile(),
+    tablet: breakpointService.isTablet(),
+    desktop: breakpointService.isDesktop()
+  }"
+>
+  <app-header [title]="'Frida Nordenlöw'"></app-header>
+  <main>
     <router-outlet />
-  </div>
-</main>
+  </main>
+</div>

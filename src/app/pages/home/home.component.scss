@@ -63,6 +63,8 @@
     }
 
     &--secondary {
+      font-family: $primary-font;
+
       font-weight: $fw-medium;
       color: $dark-grey;
     }
