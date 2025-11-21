@@ -7,20 +7,22 @@ $font-gothic: "Special Gothic Expanded One", sans-serif;
 $font-rubik: "Rubik Mono One", monospace;
 
 /* Font size */
-$font-size-xxs: 0.75rem; // 12px
-$font-size-xs: 0.875rem; // 14px
-$font-size-sm: 1rem; // 16px (default body)
-$font-size-md: 1.125rem; // 18px
-$font-size-lg: 1.25rem; // 20px
-$font-size-xl: 1.5rem; // 24px
-$font-size-xxl: 1.75rem; // 28px
-$font-size-heading-xxs: 1.25rem; // 20px
-$font-size-heading-xs: 1.5rem; // 24px
-$font-size-heading-sm: 2rem; // 32px
-$font-size-heading-md: 2.25rem; // ?
-$font-size-heading-lg: 2.5rem; // ?
-$font-size-heading-xl: 3rem; // 48px
-$font-size-heading-xxl: 4rem;
+$fs-xxs: 0.75rem; // 12px
+$fs-xs: 0.875rem; // 14px
+$fs-sm: 1rem; // 16px (default body)
+$fs-md: 1.125rem; // 18px
+$fs-lg: 1.25rem; // 20px
+$fs-xl: 1.5rem; // 24px
+$fs-xxl: 1.75rem; // 28px
+$fs-heading-xxs: 1.25rem; // 20px
+$fs-heading-xs: 1.5rem; // 24px
+$fs-heading-sm: 2rem; // 32px
+$fs-heading-md: 2.25rem; // ?
+$fs-heading-lg: 2.5rem; // ?
+$fs-heading-xl: 3rem; // 48px
+$fs-heading-xxl: 4rem;
+
+$paragraph: clamp(#{$fs-sm}, calc(#{$fs-lg} + 1vw), #{$fs-md});
 
 /* Font weight */
 $fw-regular: 400;
@@ -61,4 +63,6 @@ $space-md: 1.5rem; // 24px
 $space-lg: 2rem; // 32px
 $space-xl: 3rem; // 48px
 $space-xxl: 4rem; // 64px
-$space-xxxl: 6rem; // 96px
+
+/* Border styles */
+$border-line: 4px solid $black;

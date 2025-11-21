@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: $space-md;
   padding: $space-md;
-  border-left: 4px solid $black;
+  border-left: $border-line;
 
   @media (min-width: $bp-small) {
     padding: $space-xl;
@@ -73,7 +73,7 @@
 
     &-link {
       color: black;
-      font-size: $font-size-xl;
+      font-size: $fs-xl;
       transition: color 0.3s ease;
 
       &:hover {

@@ -1,11 +1,13 @@
-<article class="card job-card">
+<article class="card job">
   <div>
-    <h3 class="job-card__position">{{ job().position }}</h3>
-    <h4 class="job-card__company">&#64; {{ job().company }}</h4>
-    <p class="job-card__date">{{ job().startDate }}–{{ job().endDate }}</p>
-    <p class="job-card__location">{{ job().location }}</p>
+    <h3 class="job__position">{{ job().position }}</h3>
+    <h4 class="job__company">&#64; {{ job().company }}</h4>
   </div>
   <div>
-    <p class="job-card__description">{{ job().description }}</p>
+    <p class="job__date">{{ job().startDate }}–{{ job().endDate }}</p>
+    <p class="job__location">{{ job().location }}</p>
+  </div>
+  <div>
+    <p>{{ job().description }}</p>
   </div>
 </article>

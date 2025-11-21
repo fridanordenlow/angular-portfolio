@@ -1,25 +1,25 @@
-<article class="project-card">
+<article class="project">
   <img
     [ngSrc]="project().imagePath"
     alt=""
-    class="project-card__image"
+    class="project__image"
     width="400"
     height="200"
     sizes="(max-width: 768px) 100vw, 50vw"
   />
 
-  <h2 class="project-card__heading">{{ project().title }}</h2>
-  <p class="project-card__description">{{ project().description }}</p>
-  <div class="project-card__languages">
+  <h2 class="project__heading">{{ project().title }}</h2>
+  <p class="project__description">{{ project().description }}</p>
+  <div class="project__languages">
     <span
       *ngFor="let lang of project().techLanguages"
-      class="project-card__language"
+      class="project__language"
     >
       {{ lang }}
     </span>
   </div>
 
-  <div class="project-card__buttons">
+  <div class="project__buttons">
     <app-button
       text="View Code"
       [link]="project().githubLink"

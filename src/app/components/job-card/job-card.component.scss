@@ -1,22 +1,10 @@
 @use "variables" as *;
 
-.job-card {
+.job {
   display: flex;
 
-  &__company {
-    margin-bottom: $space-xs;
-  }
-
-  &__date {
-    font-weight: $fw-medium;
-  }
-
+  &__date,
   &__location {
     font-weight: $fw-medium;
-  }
-
-  &__description {
-    font-family: $secondary-font;
-    //  font-size: $font-size-md;
   }
 }

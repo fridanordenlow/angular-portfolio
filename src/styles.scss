@@ -1,2 +1,28 @@
 @use "styles/reset";
 @use "styles/base";
+@use "variables" as *;
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 $space-lg $space-lg $space-lg;
+
+  @media (min-width: $bp-medium) {
+    padding: 0 $space-xl $space-xl $space-xl;
+  }
+
+  @media (min-width: $bp-large) {
+    padding: 0 $space-xxl $space-xxl $space-xxl;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+  padding: $space-sm;
+  margin-bottom: $space-md;
+  border-left: $border-line;
+}

@@ -9,7 +9,6 @@ import { NgClass } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, NgClass],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'angular-portfolio';

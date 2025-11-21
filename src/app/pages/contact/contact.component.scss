@@ -9,22 +9,6 @@
   min-height: 100vh;
   flex: 1;
 
-  // &__header {
-  //   color: $green;
-  // }
-
-  // &__header {
-  //   color: black;
-  //   font-size: $font-size-heading-sm;
-  //   font-weight: $fw-black;
-  //   margin-bottom: 65px;
-
-  //   @media (min-width: 667px) {
-  //     font-size: $font-size-heading-lg;
-  //     margin-bottom: $space-lg;
-  //   }
-  // }
-
   &__image-and-titles {
     display: flex;
     flex-direction: column;
@@ -55,20 +39,20 @@
     margin-top: $space-lg;
 
     &-name {
-      font-size: $font-size-xxl;
+      font-size: $fs-xxl;
       font-weight: $fw-bold;
-      color: black;
+      color: $black;
     }
 
     &-role--primary {
-      font-size: $font-size-heading-sm;
+      font-size: $fs-heading-sm;
       font-weight: $fw-black;
     }
 
     &-role--secondary {
-      font-size: $font-size-xl;
+      font-size: $fs-xl;
       font-weight: $fw-regular;
-      color: #565656;
+      color: $dark-grey;
     }
 
     @media (min-width: 667px) {
@@ -76,15 +60,15 @@
       margin-top: 0;
 
       &-name {
-        font-size: $font-size-heading-sm;
+        font-size: $fs-heading-sm;
       }
 
       &-role--primary {
-        font-size: $font-size-heading-md;
+        font-size: $fs-heading-md;
       }
 
       &-role--secondary {
-        font-size: $font-size-xl;
+        font-size: $fs-xl;
       }
     }
   }
@@ -95,7 +79,7 @@
     align-items: flex-start;
     color: black;
     font-weight: $fw-bold;
-    font-size: $font-size-md;
+    font-size: $fs-md;
     line-height: $line-height-sm;
     // margin: $space-xl 0;
     margin: $space-sm 0 $space-sm 0;
@@ -106,7 +90,7 @@
     }
 
     @media (min-width: 667px) {
-      font-size: $font-size-xl;
+      font-size: $fs-xl;
       // font-weight: $fw-bold;
       // line-height: $line-height-xl;
       // margin: $space-xxl 0;
@@ -121,16 +105,12 @@
 
     &-link {
       color: black;
-      font-size: $font-size-xl;
+      font-size: $fs-xl;
       transition: color 0.3s ease;
 
       &:hover {
         color: $green;
       }
-
-      // @media (min-width: 667px) {
-      //   font-size: $font-size-xl;
-      // }
     }
   }
 }

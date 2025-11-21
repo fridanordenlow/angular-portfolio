@@ -49,13 +49,6 @@
     justify-content: center;
   }
 
-  // &__name {
-  //   font-family: $primary-font;
-  //   font-size: $font-size-xxl;
-  //   font-weight: $fw-bold;
-  //   color: #86b8d7;
-  // }
-
   &__profession {
     &--primary {
       font-weight: $fw-black;
@@ -72,8 +65,8 @@
 
   &__paragraph {
     font-family: $secondary-font;
+    font-size: $paragraph;
     font-weight: $fw-regular;
-    // line-height: $line-height-md;
     margin-top: $space-lg;
 
     a {
@@ -101,7 +94,7 @@
 
   &__icon {
     color: $red;
-    font-size: $font-size-xxl;
+    font-size: $fs-xxl;
 
     &:hover {
       color: $blue;

@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-.education-card {
+.education {
   &__school {
     margin-bottom: $space-xs;
   }
@@ -15,6 +15,5 @@
 
   &__description {
     font-family: $secondary-font;
-    // font-size: $font-size-md; // Maybe remove
   }
 }

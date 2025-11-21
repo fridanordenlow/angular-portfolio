@@ -11,17 +11,6 @@
     gap: $space-xl;
   }
 
-  &__skills--group {
-    border-bottom: 4px solid black;
-    padding-left: $space-sm;
-  }
-
-  &__skills--list {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 $space-lg 0;
-  }
-
   &__education,
   &__jobs {
     margin-top: $space-md;
@@ -29,25 +18,17 @@
 
   &__heading {
     font-family: $font-bebas;
-    font-size: $font-size-heading-sm;
+    font-size: $fs-heading-sm;
     font-weight: $fw-bold;
     color: $blue;
     padding-bottom: $space-xxs;
-  }
 
-  &__heading--tech {
-    color: $dark-red;
-  }
+    &--education {
+      color: $red;
+    }
 
-  &__heading--soft {
-    color: $pink;
-  }
-
-  &__heading--education {
-    color: $red;
-  }
-
-  &__heading--jobs {
-    color: $green;
+    &--jobs {
+      color: $green;
+    }
   }
 }
