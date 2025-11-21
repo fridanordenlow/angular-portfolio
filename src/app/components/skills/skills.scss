@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+.skills {
+  border-bottom: $border-line;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: $space-xl;
+  }
+
+  &__heading {
+    font-family: $font-bebas;
+    font-size: $fs-heading-sm;
+    font-weight: $fw-bold;
+    color: $blue;
+
+    &--tech {
+      color: $blue;
+    }
+
+    &--soft {
+      color: $pink;
+    }
+  }
+}
+
+ul {
+  list-style: square;
+  line-height: $line-height-lg;
+  margin: 0;
+  padding: 0 0 $space-lg $space-md;
+
+  li {
+    font-family: $secondary-font;
+  }
+}

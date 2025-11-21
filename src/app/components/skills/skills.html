@@ -1,0 +1,19 @@
+<section class="skills__container">
+  <div class="skills skills__tech-list">
+    <h2 class="skills__heading skills__heading--tech">Tech stack</h2>
+    <ul>
+      @for (skill of techSkills(); track $index) {
+      <li>{{ skill }}</li>
+      }
+    </ul>
+  </div>
+
+  <div class="skills skills__soft-list">
+    <h2 class="skills__heading skills__heading--soft">Soft skills</h2>
+    <ul>
+      @for (skill of softSkills(); track $index) {
+      <li>{{ skill }}</li>
+      }
+    </ul>
+  </div>
+</section>
