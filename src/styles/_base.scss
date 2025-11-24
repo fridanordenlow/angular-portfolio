@@ -45,7 +45,7 @@ h3 {
 
 p {
   font-family: $secondary-font;
-  font-size: clamp(#{$fs-sm}, calc(#{$fs-lg} + 1vw), #{$fs-md});
+  font-size: clamp(#{$fs-md}, calc(#{$fs-lg} + 1vw), #{$fs-lg});
 }
 
 span {
