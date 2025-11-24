@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  @media (min-width: $bp-medium) {
+    align-self: flex-start;
+  }
+
+  .icon {
+    color: $red;
+    font-size: $fs-xxl;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
