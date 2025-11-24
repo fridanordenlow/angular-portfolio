@@ -17,13 +17,21 @@ button {
 }
 
 .btn {
-  &--github {
+  border: 2px solid $black;
+  color: $black;
+
+  &:hover {
     background-color: $green;
     color: white;
   }
 
-  &--demo {
-    background-color: $blue;
-    color: white;
-  }
+  // &--github {
+  //   // background-color: $green;
+  //   color: white;
+  // }
+
+  // &--demo {
+  //   // background-color: $blue;
+  //   color: white;
+  // }
 }

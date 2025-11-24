@@ -22,7 +22,7 @@ $fs-heading-lg: 2.5rem; // ?
 $fs-heading-xl: 3rem; // 48px
 $fs-heading-xxl: 4rem;
 
-$paragraph: clamp(#{$fs-sm}, calc(#{$fs-lg} + 1vw), #{$fs-md});
+// $paragraph: clamp(#{$fs-sm}, calc(#{$fs-lg} + 1vw), #{$fs-md});
 
 /* Font weight */
 $fw-regular: 400;
@@ -49,6 +49,7 @@ $grey: #afafaf;
 $light-grey: #e8e8e8;
 $dark-grey: #565656;
 $black: #191919;
+$white: #f1f1f1;
 
 /* Breakpoints */
 $bp-small: 667px;
