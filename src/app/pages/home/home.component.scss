@@ -62,7 +62,7 @@
 
   &__paragraph {
     margin: $space-md 0 $space-xl 0;
-    max-width: 600px;
+    max-width: 700px;
 
     a {
       color: black;
@@ -80,6 +80,7 @@
 
     @media (min-width: $bp-medium) {
       display: flex;
+      flex-direction: column;
       width: 50%;
       align-items: stretch;
       justify-content: center;
@@ -88,14 +89,21 @@
     // @media (min-width: $bp-large) {
     //   flex: 1;
     // }
-  }
 
-  &__textile-image {
-    display: block;
-    border-radius: 2px;
+    img {
+      display: block;
+      border-radius: 2px;
 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      margin-top: $space-xs;
+      font-size: $fs-sm;
+      font-style: italic;
+      color: $dark-grey;
+    }
   }
 }
