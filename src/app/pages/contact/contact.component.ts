@@ -1,12 +1,11 @@
-import { Component, type OnInit } from '@angular/core';
-import { ContactCard } from '../../components/contact-card/contact-card';
-// import { NgOptimizedImage } from '@angular/common';
+import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import { IconBar } from '../../shared/icon-bar/icon-bar';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ContactCard],
-  // imports: [NgOptimizedImage],
+  imports: [IconBar, NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })

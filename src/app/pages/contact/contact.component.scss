@@ -3,114 +3,73 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  // background: #aac5b5;
-  padding: 0 $space-md;
-  min-height: 100vh;
-  flex: 1;
+  gap: $space-md;
+  padding: $space-md 0;
+  // border-left: $border-line;
 
-  &__image-and-titles {
+  @media (min-width: $bp-small) {
+    padding: $space-xl;
+    border-left: $border-line;
+  }
+
+  &__image-titles {
     display: flex;
     flex-direction: column;
+    align-self: center;
 
-    @media (min-width: 667px) {
-      flex-direction: row;
+    @media (min-width: $bp-small) {
+      align-self: flex-start;
+      // To have titles on the side of the image on bigger screens
+      //   flex-direction: row;
     }
   }
 
   &__image {
-    // width: 164px;
-    // height: 164px;
     border-radius: 50%;
     object-fit: cover;
     align-self: center;
     object-position: 10% 90%;
-
-    @media (min-width: 667px) {
-      margin-right: $space-lg;
-    }
   }
 
   &__titles {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-evenly;
-    // height: 115px;
-    margin-top: $space-lg;
+    align-self: center;
+    margin-top: $space-md;
 
-    &-name {
-      font-size: $fs-xxl;
-      font-weight: $fw-bold;
-      color: $black;
-    }
+    // To have titles on the side of the image on bigger screens
+    // @media (min-width: $bp-small) {
+    //   padding-left: $space-md;
+    //   margin-top: 0;
+    // }
+  }
 
-    &-role--primary {
-      font-size: $fs-heading-sm;
+  &__profession {
+    &--primary {
       font-weight: $fw-black;
+      color: $blue;
     }
 
-    &-role--secondary {
-      font-size: $fs-xl;
-      font-weight: $fw-regular;
+    &--secondary {
+      font-weight: $fw-medium;
       color: $dark-grey;
-    }
-
-    @media (min-width: 667px) {
-      justify-content: flex-start;
-      margin-top: 0;
-
-      &-name {
-        font-size: $fs-heading-sm;
-      }
-
-      &-role--primary {
-        font-size: $fs-heading-md;
-      }
-
-      &-role--secondary {
-        font-size: $fs-xl;
-      }
     }
   }
 
   &__details {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    color: black;
-    font-weight: $fw-bold;
-    font-size: $fs-md;
-    line-height: $line-height-sm;
-    // margin: $space-xl 0;
-    margin: $space-sm 0 $space-sm 0;
+    margin-top: $space-sm;
 
-    span {
-      display: block;
-      margin-bottom: $space-xs;
+    h3 {
+      padding-bottom: $space-xxs;
     }
 
-    @media (min-width: 667px) {
-      font-size: $fs-xl;
-      // font-weight: $fw-bold;
-      // line-height: $line-height-xl;
-      // margin: $space-xxl 0;
+    p {
+      font-family: $primary-font;
     }
   }
 
   &__icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100px;
-
-    &-link {
-      color: black;
-      font-size: $fs-xl;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: $green;
-      }
-    }
   }
 }
