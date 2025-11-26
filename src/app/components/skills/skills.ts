@@ -19,6 +19,7 @@ export class Skills {
     'Vite, npm, pnpm',
     'Node.js, Express.js',
     'REST API, GraphQL, SQL, NoSQL',
+    'Postman, Insomnia',
     'Version control, Git',
     'UX/Usability',
     'Figma, Photoshop, InDesign',
