@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, type OnInit } from '@angular/core';
-import { IconBar } from '../../shared/icon-bar/icon-bar';
+import { IconBar } from '../../components/shared/icon-bar/icon-bar';
 
 @Component({
   selector: 'app-home',

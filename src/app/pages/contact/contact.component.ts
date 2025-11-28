@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { IconBar } from '../../shared/icon-bar/icon-bar';
+import { IconBar } from '../../components/shared/icon-bar/icon-bar';
 
 @Component({
   selector: 'app-contact',
