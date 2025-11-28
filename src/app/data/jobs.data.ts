@@ -9,7 +9,7 @@ export const jobs: IJob[] = [
     endDate: 'Dec 2025',
     location: 'Solna, Stockholm',
     description:
-      'Applied theoretical knowledge in real projects while learning professional workflows and tools. Developed problem-solving, coding, and team collaboration skills, and gained insight into agile methodologies. Participated in workshops, client meetings, planning sessions, and sprint demos. Worked with modern frontend frameworks and tools, gaining hands-on experience in professional development workflows (currently learning Angular).',
+      'Applied theoretical knowledge in real projects while improving fundamental skills in HTML, CSS, and JavaScript, as well as modern frameworks like Angular and React. Strengthened problem-solving, coding, and team collaboration skills, and gained practical experience with professional workflows, tools, and agile methodologies.',
   },
   {
     id: 'iittala',
@@ -24,23 +24,23 @@ export const jobs: IJob[] = [
   {
     id: 'litet-nystan',
     company: 'Litet nystan',
-    position: 'Sales & Customer Advisor',
+    position: 'Sales Associate & Customer Advisor',
     startDate: 'Oct 2019',
     endDate: 'Aug 2022',
     location: 'Södermalm, Stockholm',
     description:
       'Stockholm’s leading yarn shop. Responsibilities included sales, advising customers on knitting, color, and design, managing deliveries and orders, invoicing, customer service, and stock ordering.',
   },
-  {
-    id: 'ma-baker',
-    company: 'MA Baker, AB Geten',
-    position: 'Kitchen, Serving & Cashier Staff',
-    startDate: 'Dec 2017',
-    endDate: 'Oct 2019',
-    location: 'Kärrtorp, Stockholm',
-    description:
-      'Worked in kitchen, serving, and cashier roles, providing customer service and supporting daily operations.',
-  },
+  // {
+  //   id: 'ma-baker',
+  //   company: 'MA Baker, AB Geten',
+  //   position: 'Kitchen, Serving & Cashier Staff',
+  //   startDate: 'Dec 2017',
+  //   endDate: 'Oct 2019',
+  //   location: 'Kärrtorp, Stockholm',
+  //   description:
+  //     'Worked in kitchen, serving, and cashier roles, providing customer service and supporting daily operations.',
+  // },
   // {
   //   id: 'dalslands-kanal',
   //   company: 'Dalslands Kanal AB',

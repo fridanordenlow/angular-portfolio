@@ -18,7 +18,7 @@ export class Skills {
     'Component architecture & clean code practices',
     'Vite, npm, pnpm',
     'Node.js, Express.js',
-    'REST API, GraphQL, SQL, NoSQL',
+    'REST API, SQL, NoSQL',
     'Postman, Insomnia',
     'Version control, Git',
     'UX/Usability',
