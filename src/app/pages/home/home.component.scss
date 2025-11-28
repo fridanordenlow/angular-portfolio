@@ -10,7 +10,7 @@
     flex: 1;
     padding-top: $space-xl;
 
-    @media (min-width: $bp-small) {
+    @media (min-width: $bp-medium) {
       justify-content: center;
       width: 60%;
       padding-right: $space-lg;
