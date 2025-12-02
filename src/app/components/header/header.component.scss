@@ -1,47 +1,45 @@
 @use "variables" as *;
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: $space-md 0 $space-xl 0;
-  z-index: 10;
+.link {
+  font-family: $primary-font;
+  font-weight: $fw-medium;
+  font-size: clamp(#{$fs-md}, calc(#{$fs-heading-md} + 1.5vw), #{$fs-lg});
+  color: $black;
+  text-decoration: none;
 
-  &__link {
-    font-family: $primary-font;
-    font-weight: $fw-medium;
-    font-size: clamp(#{$fs-md}, calc(#{$fs-heading-md} + 1.5vw), #{$fs-lg});
-    color: black;
-    text-decoration: none;
-
-    &--mobile {
-      font-size: $fs-xxl;
-    }
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &.active {
-      text-decoration: underline;
-    }
+  &--mobile {
+    font-size: $fs-xl;
   }
 
-  &__nav-desktop {
+  &:hover,
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: $space-md 0 $space-xl 0;
+    z-index: 10;
+  }
+
+  &__desktop-menu {
     display: flex;
     gap: $space-sm;
     align-items: center;
   }
 
-  &__hamburger-menu {
+  &__hamburger {
     display: none;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
     width: 2rem;
     gap: 0.4rem;
-    background: none;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -53,7 +51,7 @@
       height: 3px;
       width: 100%;
       background: $black;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
       transform-origin: center;
       border-radius: 10px;
     }
@@ -71,77 +69,36 @@
     }
   }
 
-  &__mobile-menu {
-    display: none;
-    position: absolute;
-    top: calc(100%);
-    width: 100%;
-    inset: 0;
-    background: $primary-bg-color;
-    z-index: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: $space-xxl;
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    &--close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      font-size: 3rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-  }
-
-  &__mobile-menu.open {
-    display: flex;
-  }
-
   @media (max-width: $bp-medium) {
     &__desktop-menu {
       display: none;
     }
 
-    &__hamburger-menu {
+    &__hamburger {
       display: flex;
     }
   }
 }
 
-// @media (min-width: $bp-medium) {
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-// }
+.mobile-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: $primary-bg-color;
+  z-index: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: $space-lg;
+  padding-top: 8rem;
 
-// nav {
-//   display: flex;
-//   flex-direction: row;
-//   gap: $space-sm;
-//   align-items: center;
+  &--nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-// a {
-//   font-family: $primary-font;
-//   font-weight: $fw-medium;
-//   font-size: clamp(#{$fs-md}, calc(#{$fs-heading-md} + 1.5vw), #{$fs-lg});
-//   color: black;
-//   text-decoration: none;
-
-//   &:hover {
-//     text-decoration: underline;
-//   }
-
-//   &.active {
-//     // color: $green;
-//     text-decoration: underline;
-//   }
-// }
-// }
+  &.open {
+    display: flex;
+  }
+}

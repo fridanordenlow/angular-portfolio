@@ -1,42 +1,39 @@
-<header>
-  <div class="header">
-    <h1>{{ title() }}</h1>
-    <!-- <app-navbar></app-navbar> -->
-    <nav class="header__desktop-menu">
-      @for (link of links; track link.path) {
-      <a
-        class="header__link"
-        [routerLink]="link.path"
-        [routerLinkActive]="'active'"
-        [routerLinkActiveOptions]="{ exact: link.exact ?? false }"
-      >
-        {{ link.label }}
-      </a>
-      }
-    </nav>
-
-    <button
-      class="header__hamburger-menu"
-      [class.open]="isMobileMenuOpen"
-      aria-label="Toggle menu"
-      (click)="toggleMobileMenu()"
+<header class="header header__wrapper">
+  <h1>{{ title() }}</h1>
+  <nav class="header__desktop-menu">
+    @for (link of links; track link.path) {
+    <a
+      class="link"
+      [routerLink]="link.path"
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: link.exact ?? false }"
     >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+      {{ link.label }}
+    </a>
+    }
+  </nav>
+
+  <button
+    class="header__hamburger"
+    [class.open]="isMobileMenuOpen"
+    aria-label="Toggle menu"
+    (click)="toggleMobileMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 
 <div
-  class="header__mobile-menu"
+  class="mobile-menu"
   [class.open]="isMobileMenuOpen"
   [attr.aria-hidden]="!isMobileMenuOpen"
 >
-  <nav class="header__nav-mobile">
+  <nav class="mobile-menu--nav">
     @for (link of links; track link.path) {
     <a
-      class="header__link header__link--mobile"
+      class="link link--mobile"
       [routerLink]="link.path"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: link.exact ?? false }"
