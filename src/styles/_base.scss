@@ -21,8 +21,8 @@ h1 {
   color: $red;
   font-family: $font-oswald;
   font-size: clamp(
-    #{$fs-heading-sm},
-    calc(#{$fs-heading-sm} + 2vw),
+    #{$fs-heading-xs},
+    calc(#{$fs-heading-xs} + 2vw),
     #{$fs-heading-xl}
   );
   text-transform: uppercase;
