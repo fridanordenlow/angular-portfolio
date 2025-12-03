@@ -1,37 +1,42 @@
 <article class="project">
-  <img
-    [ngSrc]="project().imagePath"
-    alt=""
-    class="project__image"
-    width="400"
-    height="200"
-    sizes="(max-width: 768px) 100vw, 50vw"
-  />
+  <div>
+    <img
+      [ngSrc]="project().imagePath"
+      alt=""
+      class="project__image"
+      width="400"
+      height="200"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
 
-  <h2 class="project__heading">{{ project().title }}</h2>
-  <p class="project__description">{{ project().description }}</p>
-  <div class="project__languages">
-    @for (lang of project().techLanguages; track lang) {
-    <span class="project__language">
-      {{ lang }}
-    </span>
-    }
+    <h2 class="project__heading">{{ project().title }}</h2>
+    <p class="project__description">{{ project().description }}</p>
   </div>
 
-  <div class="project__buttons">
-    <app-button
-      text="View Code"
-      [link]="project().githubLink"
-      [styleClass]="'btn btn--github'"
-    >
-    </app-button>
-    @if (project().deployedLink) {
-    <app-button
-      text="Live Demo"
-      [link]="project().deployedLink"
-      [styleClass]="'btn btn--demo'"
-    >
-    </app-button
-    >}
+  <div>
+    <div class="project__languages">
+      @for (lang of project().techLanguages; track lang) {
+      <span class="project__language">
+        {{ lang }}
+      </span>
+      }
+    </div>
+
+    <div class="project__buttons">
+      <app-button
+        text="View Code"
+        [link]="project().githubLink"
+        [styleClass]="'btn btn--github'"
+      >
+      </app-button>
+      @if (project().deployedLink) {
+      <app-button
+        text="Live Demo"
+        [link]="project().deployedLink"
+        [styleClass]="'btn btn--demo'"
+      >
+      </app-button
+      >}
+    </div>
   </div>
 </article>
