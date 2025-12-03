@@ -6,37 +6,37 @@ export const projects: IProject[] = [
     imagePath: 'assets/images/tech-req-1.webp',
     title: 'TechReq - Job Listings',
     description:
-      'A group project where we built a web application to fetch and display job ads using the JobTech API. The app focuses on tech jobs and displays only relevant IT and software development positions from Platsbanken. On the homepage, users can see the ten most recently posted jobs and a chart visualizing the number of jobs per location. Users can also search by keywords to find roles matching their interests and location. The project uses React Context for state management and TypeScript for type safety, along with fetch-based service functions for API calls. It also uses Arbetsförmedlingen’s open-source design system for consistent UI components.',
+      'A group project where we built a web application to fetch and display job ads using the JobTech API. The app focuses on tech jobs and displays only relevant IT and software development positions from Platsbanken. Users can search by keywords to find roles matching their interests and location. The project uses React Context for state management and TypeScript for type safety, along with fetch-based service functions for API calls. It also uses Arbetsförmedlingen’s open-source design system with their UI components.',
     techLanguages: ['React', 'JavaScript', 'TypeScript', 'CSS', 'HTML'],
     githubLink:
       'https://github.com/fridanordenlow/fed24d-case-af-jobtech-fridanordenlow',
     deployedLink: 'https://https://techreq.vercel.app/',
   },
   {
+    imagePath: 'assets/images/shelfie-book-app-1.webp',
+    title: 'Shelfie – Book Application',
+    description:
+      'A fullstack group project where we built a book application with a Vue.js frontend and a Node.js/Express.js backend connected to MongoDB. Users can browse books, read and write reviews, and manage content through a protected admin panel. The project focuses on API development, database integration, authentication with JWT, and role-based access control.',
+    techLanguages: ['Vue', 'Javascript', 'Node', 'Express', 'MongoDB'],
+    githubLink: 'https://github.com/fridanordenlow/fed24d-api-inl2-shelfie',
+  },
+  {
     imagePath: 'assets/images/textile-webshop_portfolio.webp',
     title: 'Textile Webshop',
     description:
-      'A fictional webshop application for textiles, built with vanilla JavaScript. This project includes functionalities such as listing products, sorting and filtering, managing a shopping cart, and placing orders through a form.',
-    techLanguages: ['Javascript', 'HTML', 'SASS'],
+      'A fictional webshop application for textiles, built with vanilla JavaScript with accessibility and user experience in mind. Users can browse products, sort and filter items, manage a shopping cart, and place orders through a form. Additional features include responsive design for mobile and desktop, dynamic product price adjustments, custom form validation with regex, and clear feedback for all user interactions. Accessibility and usability were key priorities, and the project was tested using Lighthouse and validation tools to ensure compliance and a seamless user experience.',
+    techLanguages: ['Javascript', 'SASS', 'HTML', 'Accessibility'],
     githubLink:
       'https://github.com/fridanordenlow/project-everyday-textile-webshop',
     deployedLink:
       'https://fridanordenlow.github.io/project-everyday-textile-webshop/',
   },
   {
-    imagePath: 'assets/images/shelfie-book-app-1.webp',
-    title: 'Shelfie – Book Application',
-    description:
-      'A fullstack group project where we built a book application with a Vue.js frontend and a Node.js/Express.js backend connected to MongoDB. Users can browse books, read and write reviews, and manage content through a protected admin panel. The project focuses on API development, database integration, authentication with JWT, and role-based access control.',
-    techLanguages: ['Vue', 'Node', 'Express', 'MongoDB', 'CSS', 'HTML'],
-    githubLink: 'https://github.com/fridanordenlow/fed24d-api-inl2-shelfie',
-  },
-  {
     imagePath: 'assets/images/jazzy-quiz_preview.webp',
     title: 'Jazz Up Quiz',
     description:
       'An engaging and user-friendly music quiz game emphasizing accessible design and intuitive feedback. Features randomized questions, multiple-choice answers, a scoring system with speed bonuses, and a final summary showing score and time.',
-    techLanguages: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'SASS'], // UPPDATERA
+    techLanguages: ['JavaScript', 'Typescript', 'SCSS', 'Accessibility'],
     githubLink: 'https://github.com/fridanordenlow/project-jazzy-music-quiz',
     deployedLink: 'https://fridanordenlow.github.io/project-jazzy-music-quiz/',
   },
@@ -89,7 +89,7 @@ export const projects: IProject[] = [
     title: 'Weather App',
     description:
       'This weather site shows the current weather and a five day forecast in the chosen city by pulling data from the Open Weather API. to update the current and 5-day forecast. It changes color and weather icons based on the current conditions.',
-    techLanguages: ['Javascript', 'HTML5', 'CSS3'],
+    techLanguages: ['Javascript', 'HTML', 'CSS'],
     githubLink: 'https://github.com/fridanordenlow/project-weather-app',
     deployedLink: 'https://voluble-bonbon-854851.netlify.app',
   },
