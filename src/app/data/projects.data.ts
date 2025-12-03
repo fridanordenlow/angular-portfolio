@@ -24,6 +24,14 @@ export const projects: IProject[] = [
       'https://fridanordenlow.github.io/project-everyday-textile-webshop/',
   },
   {
+    imagePath: 'assets/images/shelfie-book-app-1.webp',
+    title: 'Shelfie – Book Application',
+    description:
+      'A fullstack group project where we built a book application with a Vue.js frontend and a Node.js/Express.js backend connected to MongoDB. Users can browse books, read and write reviews, and manage content through a protected admin panel. The project focuses on API development, database integration, authentication with JWT, and role-based access control.',
+    techLanguages: ['Vue', 'Node', 'Express', 'MongoDB', 'CSS', 'HTML'],
+    githubLink: 'https://github.com/fridanordenlow/fed24d-api-inl2-shelfie',
+  },
+  {
     imagePath: 'assets/images/jazzy-quiz_preview.webp',
     title: 'Jazz Up Quiz',
     description:
@@ -39,7 +47,6 @@ export const projects: IProject[] = [
       'A little labyrinth game built in React where we worked with storing the current state of the game using thunks and async actions in Redux. We flirted with some coding visual elements in the design.',
     techLanguages: ['Redux', 'React', 'Javascript', 'CSS'],
     githubLink: 'https://github.com/fridanordenlow/project-labyrinth',
-    // deployedLink: 'reliable-sorbet-d720d3'
     deployedLink: 'https://reliable-sorbet-d720d3.netlify.app/',
   },
   {
@@ -49,7 +56,6 @@ export const projects: IProject[] = [
       'An online to-do list that uses Redux and reducers to manage adding, completing and deleting tasks and other functions such as visualizing how many tasks you have completed.',
     techLanguages: ['Redux', 'React', 'Javascript', 'CSS'],
     githubLink: 'https://github.com/fridanordenlow/project-todos',
-    // deployedLink: 'to-do-list-by-frida'
     deployedLink: 'https://to-do-list-by-frida.netlify.app/',
   },
   {
@@ -69,12 +75,14 @@ export const projects: IProject[] = [
   //   deployedLink: 'https://the-dream-survey.netlify.app'
   // },
   // {
+  //   imagePath: 'assets/images/spotify-phone.jpg',
   //   title: 'Music Releases',
-  //   description: 'This site shows new releases from Spotify, with data from local json-data, and links to music on Spotify. This was a pair project and the first time we were using React, components, and JSX.',
+  //   description:
+  //     'This site shows new releases from Spotify, with data from local json-data, and links to music on Spotify. This was a pair project and the first time we were using React, components, and JSX.',
   //   techLanguages: ['React', 'Javascript', 'HTML5', 'CSS3'],
   //   githubLink: 'project-music-releases',
   //   // deployedLink: 'music-releases-by-frida-and-fiona'
-  //   deployedLink: 'https://music-releases-by-frida-and-fiona.netlify.app'
+  //   deployedLink: 'https://music-releases-by-frida-and-fiona.netlify.app',
   // },
   {
     imagePath: 'assets/images/weather-app.png',
@@ -83,7 +91,6 @@ export const projects: IProject[] = [
       'This weather site shows the current weather and a five day forecast in the chosen city by pulling data from the Open Weather API. to update the current and 5-day forecast. It changes color and weather icons based on the current conditions.',
     techLanguages: ['Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/fridanordenlow/project-weather-app',
-    // deployedLink: 'voluble-bonbon-854851'
     deployedLink: 'https://voluble-bonbon-854851.netlify.app',
   },
   // {

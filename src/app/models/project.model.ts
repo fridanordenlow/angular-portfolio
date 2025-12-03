@@ -4,5 +4,5 @@ export interface IProject {
   description: string;
   techLanguages: string[];
   githubLink: string;
-  deployedLink: string;
+  deployedLink?: string;
 }
