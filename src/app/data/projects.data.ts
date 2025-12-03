@@ -17,7 +17,14 @@ export const projects: IProject[] = [
     title: 'Shelfie – Book Application',
     description:
       'A fullstack group project where we built a book application with a Vue.js frontend and a Node.js/Express.js backend connected to MongoDB. Users can browse books, read and write reviews, and manage content through a protected admin panel. The project focuses on API development, database integration, authentication with JWT, and role-based access control.',
-    techLanguages: ['Vue', 'Javascript', 'Node', 'Express', 'MongoDB'],
+    techLanguages: [
+      'Vue',
+      'Javascript',
+      'Typescript',
+      'Node',
+      'Express',
+      'MongoDB',
+    ],
     githubLink: 'https://github.com/fridanordenlow/fed24d-api-inl2-shelfie',
   },
   {
